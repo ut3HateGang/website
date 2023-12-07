@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'app/styles/uhg-style';
+body {
+  @extend .width-100-vw;
+  @extend .height-100-vh;
+  @extend .scrollable-y;
+  @include scrollbar;
+  background: var(--md-sys-color-surface);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+*,
+:after,
+:before {
+  background-color: inherit;
+  box-sizing: border-box;
+}
+
+a {
+  all: unset;
+}
+
+a:hover {
+  all: unset;
+  color: var(--md-sys-color-primary) !important;
+  cursor: pointer !important;
+}
+
+input[type='file'] {
+  display: none;
+}

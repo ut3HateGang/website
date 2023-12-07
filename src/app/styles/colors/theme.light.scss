@@ -1,0 +1,165 @@
+:root {
+  --md-sys-color-background: var(--md-sys-color-background-light);
+  --md-sys-color-background-opacity-008: var(--md-sys-color-background-light-opacity-008);
+  --md-sys-color-background-opacity-012: var(--md-sys-color-background-light-opacity-012);
+  --md-sys-color-background-opacity-016: var(--md-sys-color-background-light-opacity-016);
+
+  --md-sys-color-error: var(--md-sys-color-error-light);
+  --md-sys-color-error-container: var(--md-sys-color-error-container-light);
+  --md-sys-color-error-container-opacity-008: var(--md-sys-color-error-container-light-opacity-008);
+  --md-sys-color-error-container-opacity-012: var(--md-sys-color-error-container-light-opacity-012);
+
+  --md-sys-color-error-container-opacity-016: var(--md-sys-color-error-container-light-opacity-016);
+  --md-sys-color-error-opacity-008: var(--md-sys-color-error-light-opacity-008);
+  --md-sys-color-error-opacity-012: var(--md-sys-color-error-light-opacity-012);
+  --md-sys-color-error-opacity-016: var(--md-sys-color-error-light-opacity-016);
+
+  --md-sys-color-inverse-on-surface: var(--md-sys-color-inverse-on-surface-light);
+  --md-sys-color-inverse-on-surface-opacity-008: var(--md-sys-color-inverse-on-surface-light-opacity-008);
+  --md-sys-color-inverse-on-surface-opacity-012: var(--md-sys-color-inverse-on-surface-light-opacity-012);
+  --md-sys-color-inverse-on-surface-opacity-016: var(--md-sys-color-inverse-on-surface-light-opacity-016);
+
+  --md-sys-color-inverse-primary: var(--md-sys-color-inverse-primary-light);
+  --md-sys-color-inverse-primary-opacity-008: var(--md-sys-color-inverse-primary-light-opacity-008);
+  --md-sys-color-inverse-primary-opacity-012: var(--md-sys-color-inverse-primary-light-opacity-012);
+  --md-sys-color-inverse-primary-opacity-016: var(--md-sys-color-inverse-primary-light-opacity-016);
+
+  --md-sys-color-inverse-surface: var(--md-sys-color-inverse-surface-light);
+  --md-sys-color-inverse-surface-opacity-008: var(--md-sys-color-inverse-surface-light-opacity-008);
+  --md-sys-color-inverse-surface-opacity-012: var(--md-sys-color-inverse-surface-light-opacity-012);
+  --md-sys-color-inverse-surface-opacity-016: var(--md-sys-color-inverse-surface-light-opacity-016);
+
+  --md-sys-color-on-background: var(--md-sys-color-on-background-light);
+  --md-sys-color-on-background-opacity-008: var(--md-sys-color-on-background-light-opacity-008);
+  --md-sys-color-on-background-opacity-012: var(--md-sys-color-on-background-light-opacity-012);
+  --md-sys-color-on-background-opacity-016: var(--md-sys-color-on-background-light-opacity-016);
+
+  --md-sys-color-on-error: var(--md-sys-color-on-error-light);
+  --md-sys-color-on-error-container: var(--md-sys-color-on-error-container-light);
+  --md-sys-color-on-error-container-opacity-008: var(--md-sys-color-on-error-container-light-opacity-008);
+  --md-sys-color-on-error-container-opacity-012: var(--md-sys-color-on-error-container-light-opacity-012);
+
+  --md-sys-color-on-error-container-opacity-016: var(--md-sys-color-on-error-container-light-opacity-016);
+  --md-sys-color-on-error-opacity-008: var(--md-sys-color-on-error-light-opacity-008);
+  --md-sys-color-on-error-opacity-012: var(--md-sys-color-on-error-light-opacity-012);
+  --md-sys-color-on-error-opacity-016: var(--md-sys-color-on-error-light-opacity-016);
+
+  --md-sys-color-on-primary: var(--md-sys-color-on-primary-light);
+  --md-sys-color-on-primary-container: var(--md-sys-color-on-primary-container-light);
+  --md-sys-color-on-primary-container-opacity-008: var(--md-sys-color-on-primary-container-light-opacity-008);
+  --md-sys-color-on-primary-container-opacity-012: var(--md-sys-color-on-primary-container-light-opacity-012);
+
+  --md-sys-color-on-primary-container-opacity-016: var(--md-sys-color-on-primary-container-light-opacity-016);
+  --md-sys-color-on-primary-opacity-008: var(--md-sys-color-on-primary-light-opacity-008);
+  --md-sys-color-on-primary-opacity-012: var(--md-sys-color-on-primary-light-opacity-012);
+  --md-sys-color-on-primary-opacity-016: var(--md-sys-color-on-primary-light-opacity-016);
+
+  --md-sys-color-on-secondary: var(--md-sys-color-on-secondary-light);
+  --md-sys-color-on-secondary-container: var(--md-sys-color-on-secondary-container-light);
+  --md-sys-color-on-secondary-container-opacity-008: var(--md-sys-color-on-secondary-container-light-opacity-008);
+  --md-sys-color-on-secondary-container-opacity-012: var(--md-sys-color-on-secondary-container-light-opacity-012);
+
+  --md-sys-color-on-secondary-container-opacity-016: var(--md-sys-color-on-secondary-container-light-opacity-016);
+  --md-sys-color-on-secondary-opacity-008: var(--md-sys-color-on-secondary-light-opacity-008);
+  --md-sys-color-on-secondary-opacity-012: var(--md-sys-color-on-secondary-light-opacity-012);
+  --md-sys-color-on-secondary-opacity-016: var(--md-sys-color-on-secondary-light-opacity-016);
+
+  --md-sys-color-on-surface: var(--md-sys-color-on-surface-light);
+  --md-sys-color-on-surface-opacity-008: var(--md-sys-color-on-surface-light-opacity-008);
+  --md-sys-color-on-surface-opacity-012: var(--md-sys-color-on-surface-light-opacity-012);
+  --md-sys-color-on-surface-opacity-016: var(--md-sys-color-on-surface-light-opacity-016);
+
+  --md-sys-color-on-surface-variant: var(--md-sys-color-on-surface-variant-light);
+  --md-sys-color-on-surface-variant-opacity-008: var(--md-sys-color-on-surface-variant-light-opacity-008);
+  --md-sys-color-on-surface-variant-opacity-012: var(--md-sys-color-on-surface-variant-light-opacity-012);
+  --md-sys-color-on-surface-variant-opacity-016: var(--md-sys-color-on-surface-variant-light-opacity-016);
+
+  --md-sys-color-on-tertiary: var(--md-sys-color-on-tertiary-light);
+  --md-sys-color-on-tertiary-container: var(--md-sys-color-on-tertiary-container-light);
+  --md-sys-color-on-tertiary-container-opacity-008: var(--md-sys-color-on-tertiary-container-light-opacity-008);
+  --md-sys-color-on-tertiary-container-opacity-012: var(--md-sys-color-on-tertiary-container-light-opacity-012);
+
+  --md-sys-color-on-tertiary-container-opacity-016: var(--md-sys-color-on-tertiary-container-light-opacity-016);
+  --md-sys-color-on-tertiary-opacity-008: var(--md-sys-color-on-tertiary-light-opacity-008);
+  --md-sys-color-on-tertiary-opacity-012: var(--md-sys-color-on-tertiary-light-opacity-012);
+  --md-sys-color-on-tertiary-opacity-016: var(--md-sys-color-on-tertiary-light-opacity-016);
+
+  --md-sys-color-outline: var(--md-sys-color-outline-light);
+  --md-sys-color-outline-opacity-008: var(--md-sys-color-outline-light-opacity-008);
+  --md-sys-color-outline-opacity-012: var(--md-sys-color-outline-light-opacity-012);
+  --md-sys-color-outline-opacity-016: var(--md-sys-color-outline-light-opacity-016);
+
+  --md-sys-color-outline-variant: var(--md-sys-color-outline-variant-light);
+  --md-sys-color-outline-variant-opacity-008: var(--md-sys-color-outline-variant-light-opacity-008);
+  --md-sys-color-outline-variant-opacity-012: var(--md-sys-color-outline-variant-light-opacity-012);
+  --md-sys-color-outline-variant-opacity-016: var(--md-sys-color-outline-variant-light-opacity-016);
+
+  --md-sys-color-primary: var(--md-sys-color-primary-light);
+  --md-sys-color-primary-container: var(--md-sys-color-primary-container-light);
+  --md-sys-color-primary-container-opacity-008: var(--md-sys-color-primary-container-light-opacity-008);
+  --md-sys-color-primary-container-opacity-012: var(--md-sys-color-primary-container-light-opacity-012);
+
+  --md-sys-color-primary-container-opacity-016: var(--md-sys-color-primary-container-light-opacity-016);
+  --md-sys-color-primary-opacity-008: var(--md-sys-color-primary-light-opacity-008);
+  --md-sys-color-primary-opacity-012: var(--md-sys-color-primary-light-opacity-012);
+  --md-sys-color-primary-opacity-016: var(--md-sys-color-primary-light-opacity-016);
+
+  --md-sys-color-scrim: var(--md-sys-color-scrim-light);
+  --md-sys-color-scrim-opacity-008: var(--md-sys-color-scrim-light-opacity-008);
+  --md-sys-color-scrim-opacity-012: var(--md-sys-color-scrim-light-opacity-012);
+  --md-sys-color-scrim-opacity-016: var(--md-sys-color-scrim-light-opacity-016);
+
+  --md-sys-color-secondary: var(--md-sys-color-secondary-light);
+  --md-sys-color-secondary-container: var(--md-sys-color-secondary-container-light);
+  --md-sys-color-secondary-container-opacity-008: var(--md-sys-color-secondary-container-light-opacity-008);
+  --md-sys-color-secondary-container-opacity-012: var(--md-sys-color-secondary-container-light-opacity-012);
+
+  --md-sys-color-secondary-container-opacity-016: var(--md-sys-color-secondary-container-light-opacity-016);
+  --md-sys-color-secondary-opacity-008: var(--md-sys-color-secondary-light-opacity-008);
+  --md-sys-color-secondary-opacity-012: var(--md-sys-color-secondary-light-opacity-012);
+  --md-sys-color-secondary-opacity-016: var(--md-sys-color-secondary-light-opacity-016);
+
+  --md-sys-color-shadow: var(--md-sys-color-shadow-light);
+  --md-sys-color-shadow-opacity-008: var(--md-sys-color-shadow-light-opacity-008);
+  --md-sys-color-shadow-opacity-012: var(--md-sys-color-shadow-light-opacity-012);
+  --md-sys-color-shadow-opacity-016: var(--md-sys-color-shadow-light-opacity-016);
+
+  --md-sys-color-surface: var(--md-sys-color-surface-light);
+  --md-sys-color-surface-container: var(--md-ref-palette-neutral94);
+  --md-sys-color-surface-container-bright: var(--md-ref-palette-neutral98);
+  --md-sys-color-surface-container-dim: var(--md-ref-palette-neutral87);
+
+  --md-sys-color-surface-container-high: var(--md-ref-palette-neutral92);
+  --md-sys-color-surface-container-highest: var(--md-ref-palette-neutral90);
+  --md-sys-color-surface-container-low: var(--md-ref-palette-neutral96);
+  --md-sys-color-surface-container-lowest: var(--md-ref-palette-neutral100);
+  --md-sys-color-surface-opacity-008: var(--md-sys-color-surface-light-opacity-008);
+  --md-sys-color-surface-opacity-012: var(--md-sys-color-surface-light-opacity-012);
+  --md-sys-color-surface-opacity-016: var(--md-sys-color-surface-light-opacity-016);
+  --md-sys-color-surface-tint: var(--md-sys-color-surface-tint-light);
+  --md-sys-color-surface-tint-opacity-008: var(--md-sys-color-surface-tint-light-opacity-008);
+  --md-sys-color-surface-tint-opacity-012: var(--md-sys-color-surface-tint-light-opacity-012);
+  --md-sys-color-surface-tint-opacity-016: var(--md-sys-color-surface-tint-light-opacity-016);
+
+  --md-sys-color-surface-variant: var(--md-sys-color-surface-variant-light);
+  --md-sys-color-surface-variant-opacity-008: var(--md-sys-color-surface-variant-light-opacity-008);
+  --md-sys-color-surface-variant-opacity-012: var(--md-sys-color-surface-variant-light-opacity-012);
+  --md-sys-color-surface-variant-opacity-016: var(--md-sys-color-surface-variant-light-opacity-016);
+
+  --md-sys-color-tertiary: var(--md-sys-color-tertiary-light);
+  --md-sys-color-tertiary-container: var(--md-sys-color-tertiary-container-light);
+  --md-sys-color-tertiary-container-opacity-008: var(--md-sys-color-tertiary-container-light-opacity-008);
+  --md-sys-color-tertiary-container-opacity-012: var(--md-sys-color-tertiary-container-light-opacity-012);
+
+  --md-sys-color-tertiary-container-opacity-016: var(--md-sys-color-tertiary-container-light-opacity-016);
+  --md-sys-color-tertiary-opacity-008: var(--md-sys-color-tertiary-light-opacity-008);
+  --md-sys-color-tertiary-opacity-012: var(--md-sys-color-tertiary-light-opacity-012);
+  --md-sys-color-tertiary-opacity-016: var(--md-sys-color-tertiary-light-opacity-016);
+
+  --md-sys-elevation-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
+  --md-sys-elevation-2: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
+  --md-sys-elevation-3: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+  --md-sys-elevation-4: 0px 2px 3px 0px rgba(0, 0, 0, 0.30), 0px 6px 10px 4px rgba(0, 0, 0, 0.15);
+  --md-sys-elevation-5: 0px 4px 4px 0px rgba(0, 0, 0, 0.30), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+
+}

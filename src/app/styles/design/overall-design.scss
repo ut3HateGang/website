@@ -1,0 +1,55 @@
+//variables
+
+@mixin scrollable {
+  overflow: hidden;
+  overflow-y: auto;
+  padding-right: 12px;
+
+  &::-webkit-scrollbar {
+    background: transparent;
+    width: 12px;
+
+    &-thumb {
+      background-color: var(--md-sys-color-primary);
+      border: 2px solid var(--md-sys-color-background);
+      border-radius: 8px;
+      background-clip: border-box;
+    }
+
+    &-track {
+      background-color: transparent;
+      border-bottom-right-radius: 21px;
+      border-top-right-radius: 21px;
+      overflow: hidden;
+    }
+  }
+}
+
+@mixin scrollbar {
+  @include scrollable;
+}
+
+@mixin disabled {
+  &:disabled, &:disabled:active, &:disabled:hover, &:disabled:focus {
+    @content
+  }
+}
+
+@mixin active {
+  &:enabled:active {
+    @content
+  }
+}
+
+@mixin focus {
+  &:enabled:focus-visible {
+    outline: none;
+    @content
+  }
+}
+
+@mixin hover {
+  &:enabled:hover {
+    @content
+  }
+}

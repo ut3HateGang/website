@@ -1,0 +1,214 @@
+@import '../../../styles/uhg-style';
+
+:host {
+  height: fit-content;
+  width: fit-content;
+}
+
+.header {
+  background-color: var(--md-sys-color-surface);
+  box-sizing: border-box;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  &.vertical {
+    @include flex(column);
+    height: 100%;
+    padding: 4px 0;
+    width: $header-width;
+
+    .item {
+      @include flex(column);
+      @include clickable;
+      height: 56px;
+      margin: 0 auto 12px auto;
+
+      &.profile {
+        height: fit-content;
+      }
+
+      &.selected {
+        cursor: default;
+
+        .container {
+          background-color: var(--md-sys-color-secondary-container);
+
+          .icon, .text {
+            color: var(--md-sys-color-on-secondary-container);
+          }
+        }
+
+        &:hover {
+          .container {
+            background-color: var(--md-sys-color-secondary-container);
+
+            .icon, .text {
+              color: var(--md-sys-color-on-secondary-container);
+            }
+          }
+        }
+      }
+
+      .container {
+        @include flex(column);
+        align-items: center;
+        border-radius: 16px;
+        height: 32px;
+        margin: auto;
+        padding: 4px 16px;
+        width: 56px;
+
+        &.profile {
+          height: 50px;
+          margin: 0 auto 5px auto;
+          padding: 4px 8px;
+          width: 56px;
+        }
+
+        .icon {
+          color: var(--md-sys-color-on-surface-variant);
+          height: 24px;
+          margin: auto;
+          width: 24px;
+
+          &.profile {
+            border-radius: 20px;
+            height: 40px;
+            margin: 0 auto;
+            object-fit: cover;
+            width: 40px;
+          }
+        }
+      }
+
+      .text {
+        @extend .label-medium;
+        color: var(--md-sys-color-on-surface-variant);
+        margin: auto;
+      }
+
+      &:hover {
+        .container {
+          background-color: var(--md-sys-color-surface-variant);
+
+          .icon, .text {
+            color: var(--md-sys-color-on-surface-variant);
+          }
+        }
+      }
+    }
+  }
+
+  &.horizontal {
+    @include flex(row);
+    height: $header-height;
+    padding-right: 70px;
+    width: 100%;
+
+    .icon-menu {
+      color: var(--md-sys-color-on-surface);
+      height: 40px;
+      margin: auto 15px;
+      width: 40px;
+    }
+
+    .logo {
+      height: 70px;
+      margin: auto;
+    }
+  }
+}
+
+.menu {
+  background-color: var(--md-sys-color-surface);
+  height: 100%;
+  left: 0;
+  margin-top: $header-height;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+
+  .item {
+    @include flex(column);
+    @include clickable;
+    height: 56px;
+    margin: 0 auto 12px auto;
+
+    &.profile {
+      height: fit-content;
+    }
+
+    &.selected {
+      cursor: default;
+
+      .container {
+        background-color: var(--md-sys-color-secondary-container);
+
+        .icon, .text {
+          color: var(--md-sys-color-on-secondary-container);
+        }
+      }
+
+      &:hover {
+        .container {
+          background-color: var(--md-sys-color-secondary-container);
+
+          .icon, .text {
+            color: var(--md-sys-color-on-secondary-container);
+          }
+        }
+      }
+    }
+
+    .container {
+      @include flex(row);
+      align-items: center;
+      border-radius: 28px;
+      height: 56px;
+      margin: auto;
+      padding: 4px 16px;
+      width: fit-content;
+
+      &.profile {
+        height: 50px;
+        margin: 0 auto 5px auto;
+        padding: 4px 8px;
+        width: fit-content;
+      }
+
+      .icon {
+        color: var(--md-sys-color-on-surface-variant);
+        height: 24px;
+        margin: auto 8px auto auto;
+        width: 24px;
+
+        &.profile {
+          border-radius: 20px;
+          height: 40px;
+          margin: 0 auto;
+          object-fit: cover;
+          width: 40px;
+        }
+      }
+    }
+
+    .text {
+      @extend .label-medium;
+      color: var(--md-sys-color-on-surface-variant);
+      margin: auto;
+    }
+
+    &:hover {
+      .container {
+        background-color: var(--md-sys-color-surface-variant);
+
+        .icon, .text {
+          color: var(--md-sys-color-on-surface-variant);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+//variables
+$header-height: 80px;
+$header-width: 80px;
+$breakpoints: (max-phone: 767px,
+        max-tablet: 959px,
+        max-fanart: 1150px,
+        max-small-desktop: 1599px);
+
+//classes
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin flex-fill($direction) {
+  @include flex($direction);
+  flex: 1 1 auto;
+}
+
+@mixin flex-wrap($direction) {
+  @include flex($direction);
+  flex-flow: $direction wrap;
+}
+
+@mixin flex-fill-wrap($direction) {
+  @include flex-fill($direction);
+  flex-flow: $direction wrap;
+}
+
+.scrollable-y {
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.height-100 {
+  height: 100%;
+  max-height: 100%;
+  min-height: 100%;
+}
+
+.height-100-vh {
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
+.width-100 {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+
+.width-100-vw {
+  max-width: 100vw;
+  min-width: 100vw;
+  width: 100vw;
+}
+
+@mixin clickable {
+  cursor: pointer;
+}
+
+@mixin editable {
+  cursor: text;
+}
+
+//mixins responsive
+@mixin max-phone {
+  @media only screen and (max-width: map-get($breakpoints, max-phone)) {
+    @content
+  }
+}
+
+@mixin max-tablet {
+  @media only screen and (max-width: map-get($breakpoints, max-tablet)) {
+    @content
+  }
+}
+
+@mixin max-fanart {
+  @media only screen and (max-width: map-get($breakpoints, max-fanart)) {
+    @content
+  }
+}
+
+@mixin max-small-desktop {
+  @media only screen and (max-width: map-get($breakpoints, max-small-desktop)) {
+    @content
+  }
+}

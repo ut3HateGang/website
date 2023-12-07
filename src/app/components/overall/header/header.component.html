@@ -1,0 +1,25 @@
+<div [class]="'header vertical'">
+    <div *ngFor="let item of _headerItems" [ngClass]="{selected : item.value == _currentPage}" [routerLink]="item.link"
+         class="item">
+        <div class="container">
+            <img *ngIf="item.image!= undefined" [src]="item.image!" alt="ImageHeaderItem" class="icon"/>
+            <uhg-icon *ngIf="item.icon!= undefined" [icon]="item.icon!" [size]="24" class="icon"/>
+        </div>
+        <p class="text"> {{item.text}} </p>
+    </div>
+</div>
+<div *ngIf="_windowService.isPhone()" [class]="'header horizontal'">
+    <uhg-icon (click)="onToggleMenu()" [icon]="_menuIsOpen ? Icon.CLOSE : Icon.MENU" [size]="40"
+             class="icon-menu"></uhg-icon>
+    <img [src]="path_logo" alt="Logo Miyuna" class="logo"/>
+</div>
+<div *ngIf="_menuIsOpen" class="menu">
+    <div (click)="onClickItem()" *ngFor="let item of _headerItems" [ngClass]="{selected : item.value == _currentPage}"
+         [routerLink]="item.link" class="item">
+        <div class="container">
+            <img *ngIf="item.image!= undefined" [src]="item.image!" alt="ImageHeaderItem" class="icon"/>
+            <uhg-icon *ngIf="item.icon!= undefined" [icon]="item.icon!" [size]="24" class="icon"/>
+            <p class="text"> {{item.text}} </p>
+        </div>
+    </div>
+</div>
