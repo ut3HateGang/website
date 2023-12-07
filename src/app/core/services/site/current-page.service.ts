@@ -38,6 +38,8 @@ export class CurrentPageService {
     switch (this._previousPage) {
       case Page.HOME:
         return '/';
+      case Page.NOT_FOUND:
+        return '/';
     }
   }
 
@@ -45,6 +47,9 @@ export class CurrentPageService {
     switch (this._currentPage) {
       case Page.HOME:
         this._titleService.setTitle('Accueil');
+        break;
+      case Page.NOT_FOUND:
+        this._titleService.setTitle('Erreur 404');
         break;
     }
   }
