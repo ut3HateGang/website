@@ -1,8 +1,8 @@
 <div>
-  <question></question>
-  <div class="content">
-    <propositions *ngIf="true"></propositions>
-    <details *ngIf="false"></details>
+  <intitule [intitule]="_listQuestion[_currentQuestion].question"></intitule>
+<div class="content">
+    <propositions  [propositions]="_listQuestion[_currentQuestion].propositions" *ngIf="_quizstate==Quizstatetype.QUESTION"></propositions>
+    <explanation [details]="_listQuestion[_currentQuestion].details" *ngIf="!(_quizstate==Quizstatetype.ANSWER)"></explanation>
   </div>
 </div>
 <history></history>

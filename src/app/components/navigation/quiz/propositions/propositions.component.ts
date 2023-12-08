@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Quizstatetype} from "../../../../core/objects/enums/quizstatetype";
+import {Question} from "../../../../core/objects/models/question.model";
 
 @Component({
   selector: 'propositions',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./propositions.component.scss']
 })
 export class PropositionsComponent {
-
+  @Input() propositions!: string[];
 }

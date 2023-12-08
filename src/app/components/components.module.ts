@@ -15,6 +15,7 @@ import { QuizComponent } from './navigation/quiz/quiz.component';
 import { QuestionComponent } from './navigation/quiz/question/question.component';
 import { PropositionsComponent } from './navigation/quiz/propositions/propositions.component';
 import { HistoryComponent } from './navigation/quiz/history/history.component';
+import { ExplanationComponent } from './navigation/quiz/details/explanation.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HistoryComponent } from './navigation/quiz/history/history.component';
     QuizComponent,
     QuestionComponent,
     PropositionsComponent,
-    HistoryComponent
+    HistoryComponent,
+    ExplanationComponent
   ],
   imports: [
     RouterModule,
