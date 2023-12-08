@@ -1,10 +1,7 @@
 @import "colors/colors.token";
-@import 'colors/theme.light';
+//@import 'colors/theme.light';
 @import 'design/overall-design';
 @import 'design/look_and_feel';
 @import 'typography/typography.token';
 @import 'typography/typography.module';
-
-@media (prefers-color-scheme: dark) {
-  @import 'colors/theme.dark';
-}
+@import 'colors/theme.dark';

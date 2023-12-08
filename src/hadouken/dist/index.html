@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <script src="/index.61542594.js" defer=""></script>
+    <meta charset="UTF-8">
+    <title>Page HTML Simple</title>
+    <style>* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  color: #222;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.modal {
+  z-index: 2;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  gap: .4rem;
+  width: 450px;
+  min-height: 250px;
+  padding: 1.3rem;
+  display: flex;
+  position: absolute;
+  top: 20%;
+}
+
+.modal .flex {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.modal input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: .7rem 1rem;
+  font-size: .9em;
+}
+
+.modal p {
+  color: #777;
+  margin: .4rem 0 .2rem;
+  font-size: .9rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.btn {
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border-radius: 5px;
+  padding: .8rem 1.4rem;
+  font-size: 1em;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.btn-open {
+  position: absolute;
+  bottom: 150px;
+}
+
+.btn-close {
+  background: #eee;
+  border-radius: 50%;
+  padding: .5rem .7rem;
+  transform: translate(10px, -20px);
+}
+
+.overlay {
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+  background: #00000080;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-main {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.button-17 {
+  appearance: none;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  fill: currentColor;
+  letter-spacing: .25px;
+  text-align: center;
+  text-transform: none;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  will-change: transform, opacity;
+  z-index: 0;
+  background-color: #fff;
+  border-style: none;
+  border-radius: 24px;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  max-width: 100%;
+  height: 48px;
+  padding: 2px 24px;
+  font-family: Google Sans, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  transition: box-shadow .28s cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform .27s cubic-bezier(0, 0, .2, 1);
+  display: inline-flex;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+}
+
+.button-17:hover {
+  color: #174ea6;
+  background: #f6f9fe;
+}
+
+.button-17:active {
+  outline: none;
+  box-shadow: 0 4px 4px #3c40434d, 0 8px 12px 6px #3c404326;
+}
+
+.button-17:focus {
+  border: 2px solid #4285f4;
+  outline: none;
+}
+
+.button-17:not(:disabled) {
+  box-shadow: 0 1px 3px #3c40434d, 0 4px 8px 3px #3c404326;
+}
+
+.button-17:not(:disabled):hover {
+  box-shadow: 0 2px 3px #3c40434d, 0 6px 10px 4px #3c404326;
+}
+
+.button-17:not(:disabled):focus {
+  box-shadow: 0 1px 3px #3c40434d, 0 4px 8px 3px #3c404326;
+}
+
+.button-17:not(:disabled):active {
+  box-shadow: 0 4px 4px #3c40434d, 0 8px 12px 6px #3c404326;
+}
+
+.button-17:disabled {
+  box-shadow: 0 1px 3px #3c40434d, 0 4px 8px 3px #3c404326;
+}
+
+.icon {
+  flex-direction: column;
+  align-items: center;
+  margin: 1em auto auto 2em;
+  display: flex;
+}
+
+.icon img {
+  border-radius: 15px;
+  margin-bottom: .5em;
+}
+
+</style>
+  </head>
+  <body>
+    <img id="food-image" src="/apple.8f8fcf77.png" width="90" height="90" style="display: none">
+    <h1>Titre de la page</h1>
+    <section class="modal hidden">
+      <div class="flex">
+        <div>GG Konami code activated</div>
+        <button class="btn-close">⨉</button>
+      </div>
+      <hr>
+      <h3>Easter Egg Menu</h3>
+      <ul class="modal-main">
+        <li class="icon">
+          <img height="100px" width="100px" src="/_68e71933-7979-43fb-9f50-7f71e7c03bf7.753308db.jpg">
+          <button id="btnRa" class="button-17" role="button">
+            Radioactive Attack
+          </button>
+        </li>
+        <li class="icon">
+          <img height="100px" width="100px" src="/_07e05336-73f2-4ab2-9c0a-49f9a5388bba.20f4ed54.jpg">
+          <button id="btnSnake" class="button-17" role="button">Snake</button>
+        </li>
+        <div></div>
+        <li class="icon">
+          <img height="100px" width="100px" src="/_db047147-9a6e-4568-bf3d-bdb788594d56.62d7666a.jpg">
+          <button id="btnTetris" class="button-17" role="button">Tetris</button>
+        </li>
+      </ul>
+    </section>
+
+    <div class="overlay hidden"></div>
+    <article>
+      <h2>Article 1</h2>
+      <p>Ceci est le contenu de l'article 1.</p>
+      <p>Plus de texte pour illustrer cet article.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+        praesentium eum? Quidem rerum velit, deserunt necessitatibus, hic odit
+        numquam sequi laboriosam explicabo est nulla ipsa sunt voluptatibus
+        nostrum. Ea veritatis dolor voluptatum incidunt, debitis unde
+        consequatur nostrum voluptatem assumenda ad provident voluptates?
+        Adipisci asperiores facere vitae saepe assumenda ducimus, excepturi
+        delectus nobis, cupiditate error officiis exercitationem veniam eius aut
+        ut! Distinctio asperiores, laboriosam suscipit assumenda magnam laborum
+        cumque explicabo debitis libero fuga qui aliquam atque. Explicabo
+        ducimus tempore vero quis. Rerum mollitia libero, nisi dolorum officia
+        odio magni corrupti minima, in distinctio aspernatur quisquam dicta
+        saepe totam qui eos ex! Earum nihil magni itaque rerum. Quibusdam unde
+        quos explicabo debitis dolorum aliquam esse dolore, magnam dolor
+        accusantium quam voluptate temporibus labore, quas fugit aperiam!
+        Voluptate aperiam recusandae sint sapiente quisquam optio possimus
+        similique dignissimos ullam, rem doloremque dolore nulla accusamus
+        dolores illo cupiditate, cum accusantium consequatur odit inventore
+        consequuntur non odio. Consectetur debitis repudiandae perferendis
+        itaque ipsam, necessitatibus cumque perspiciatis eos quidem rerum esse
+        ipsum. Distinctio, magnam dolore magni quas praesentium totam, incidunt
+        similique debitis perferendis quaerat doloremque rerum in eos, ullam
+        porro amet unde tempora! Quae, eligendi et! Consequuntur porro neque
+        consequatur perspiciatis. Distinctio aut suscipit voluptates laudantium
+        quisquam?
+      </p>
+    </article>
+
+    <article>
+      <h2>Article 2</h2>
+      <p>
+        Ceci est le contenu de l'article 2. Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Ex, possimus. Tempore consequuntur et
+        totam error molestiae debitis enim quasi labore voluptatibus pariatur
+        veniam, voluptatum quae nihil, ratione eligendi quisquam quaerat
+        recusandae corporis consectetur harum suscipit nisi nulla! Error, velit
+        delectus?
+      </p>
+      <p>Plus de texte pour illustrer cet article.</p>
+    </article>
+
+    <article>
+      <h2>Article 3</h2>
+      <p>Ceci est le contenu de l'article 3.</p>
+      <p>
+        Plus de texte pour illustrer Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Recusandae neque maxime voluptas, quaerat a incidunt
+        cum voluptatum dolorem delectus! Animi alias dolores nisi reprehenderit
+        explicabo fugit! Exercitationem numquam nesciunt maxime adipisci minus
+        dolor magni rerum molestias aspernatur? Repudiandae cupiditate, odio
+        nisi ullam delectus, suscipit tempora eveniet veniam nemo aliquam
+        doloremque nesciunt id pariatur ducimus enim, iste eum deleniti sapiente
+        earum quia quod. Id fuga amet distinctio incidunt? Qui aliquid porro in!
+        Non eligendi ipsum natus facere, beatae, excepturi laborum quod sed
+        nesciunt quas autem, molestias veritatis voluptas rerum quo perspiciatis
+        doloremque minus laboriosam ducimus eum. Harum asperiores reiciendis
+        doloribus mollitia. cet article.
+      </p>
+    </article>
+  </body>
+</html>
