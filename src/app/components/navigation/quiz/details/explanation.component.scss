@@ -20,4 +20,27 @@
     color: var(--md-sys-color-on-surface);
   }
 
+  .image {
+    width: 600px;
+    margin: 12px auto;
+  }
+
+  .button {
+    height: 40px;
+    margin: 8px auto;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: var(--md-sys-color-primary);
+    width: fit-content;
+    text-align: center;
+    align-content: center;
+
+    .text {
+      @extend .body-large;
+      color: var(--md-sys-color-on-primary);
+      margin: auto 0;
+    }
+
+  }
 }
+

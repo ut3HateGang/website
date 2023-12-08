@@ -1,0 +1,1566 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410" class="pygal-chart" viewBox="0 0 800 500">
+  <!--Generated with pygal 3.0.4 (lxml) ©Kozea 2012-2016 on 2023-12-08-->
+  <!--http://pygal.org-->
+  <!--http://github.com/Kozea/pygal-->
+  <defs>
+    <style type="text/css">/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+/*
+ * Font-sizes from config, override with care
+ */
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410  {
+  -webkit-user-select: none;
+  -webkit-font-smoothing: antialiased;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .title {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 16px;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .legends .legend text {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 14px;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis text {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 10px;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis text.major {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 10px;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .text-overlay text.value {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 16px;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .text-overlay text.label {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 10px;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .tooltip {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 14px;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 text.no_data {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 64px;
+}
+
+/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+/*
+ * Styles from config
+ */
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 {
+  background-color: #073642;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 path,
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 line,
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 rect,
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 circle {
+  -webkit-transition: 500ms ease-in;
+  -moz-transition: 500ms ease-in;
+  transition: 500ms ease-in;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .graph &gt; .background {
+  fill: #073642;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .plot &gt; .background {
+  fill: #002b36;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .graph {
+  fill: #839496;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 text.no_data {
+  fill: #fdf6e3;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .title {
+  fill: #fdf6e3;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .legends .legend text {
+  fill: #839496;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .legends .legend:hover text {
+  fill: #fdf6e3;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis .line {
+  stroke: #fdf6e3;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis .guide.line {
+  stroke: #657b83;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis .major.line {
+  stroke: #839496;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis text.major {
+  fill: #fdf6e3;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis.y .guides:hover .guide.line,
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .line-graph .axis.x .guides:hover .guide.line,
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .stackedline-graph .axis.x .guides:hover .guide.line,
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .xy-graph .axis.x .guides:hover .guide.line {
+  stroke: #fdf6e3;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis .guides:hover text {
+  fill: #fdf6e3;
+}
+
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .reactive {
+  fill-opacity: .66;
+  stroke-opacity: .8;
+  stroke-width: 1;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .ci {
+    stroke: #839496;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .reactive.active,
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .active .reactive {
+  fill-opacity: .9;
+  stroke-opacity: .9;
+  stroke-width: 4;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .ci .reactive.active {
+  stroke-width: 1.5;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .series text {
+  fill: #fdf6e3;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .tooltip rect {
+  fill: #002b36;
+  stroke: #fdf6e3;
+  -webkit-transition: opacity 500ms ease-in;
+  -moz-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .tooltip .label {
+  fill: #839496;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .tooltip .label {
+  fill: #839496;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .tooltip .legend {
+  font-size: .8em;
+  fill: #657b83;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .tooltip .x_label {
+  font-size: .6em;
+  fill: #fdf6e3;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .tooltip .xlink {
+  font-size: .5em;
+  text-decoration: underline;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .tooltip .value {
+  font-size: 1.5em;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .bound {
+  font-size: .5em;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .max-value {
+  font-size: .75em;
+  fill: #657b83;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .map-element {
+  fill: #002b36;
+  stroke: #657b83 !important;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .map-element .reactive {
+  fill-opacity: inherit;
+  stroke-opacity: inherit;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .color-0, #chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .color-0 a:visited {
+  stroke: #b58900;
+  fill: #b58900;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410  .text-overlay .color-0 text {
+  fill: black;
+}
+
+
+
+
+/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 text.no_data {
+  text-anchor: middle;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .guide.line {
+  fill: none;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .centered {
+  text-anchor: middle;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .title {
+  text-anchor: middle;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .legends .legend text {
+  fill-opacity: 1;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis.x text {
+  text-anchor: middle;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis.x:not(.web) text[transform] {
+  text-anchor: start;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis.x:not(.web) text[transform].backwards {
+  text-anchor: end;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis.y text {
+  text-anchor: end;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis.y text[transform].backwards {
+  text-anchor: start;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis.y2 text {
+  text-anchor: start;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis.y2 text[transform].backwards {
+  text-anchor: end;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis .guide.line {
+  stroke-dasharray: 4,4;
+  stroke: black;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis .major.guide.line {
+  stroke-dasharray: 6,6;
+  stroke: black;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .horizontal .axis.y .guide.line,
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .horizontal .axis.y2 .guide.line,
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .vertical .axis.x .guide.line {
+  opacity: 0;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .horizontal .axis.always_show .guide.line,
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .vertical .axis.always_show .guide.line {
+  opacity: 1 !important;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis.y .guides:hover .guide.line,
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis.y2 .guides:hover .guide.line,
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis.x .guides:hover .guide.line {
+  opacity: 1;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .axis .guides:hover text {
+  opacity: 1;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .nofill {
+  fill: none;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .subtle-fill {
+  fill-opacity: .2;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .dot {
+  stroke-width: 1px;
+  fill-opacity: 1;
+  stroke-opacity: 1;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .dot.active {
+  stroke-width: 5px;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .dot.negative {
+  fill: transparent;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410  text, #chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410  tspan {
+  stroke: none !important;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .series text.active {
+  opacity: 1;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .tooltip rect {
+  fill-opacity: .95;
+  stroke-width: .5;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .tooltip text {
+  fill-opacity: 1;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .showable {
+  visibility: hidden;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .showable.shown {
+  visibility: visible;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .gauge-background {
+  fill: rgba(229, 229, 229, 1);
+  stroke: none;
+}
+
+#chart-f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410 .bg-lines {
+  stroke: #073642;
+  stroke-width: 2px;
+}
+</style>
+    <script type="text/javascript">window.pygal = window.pygal || {};window.pygal.config = window.pygal.config || {};window.pygal.config['f311d4c4-3ebf-4ae3-9b94-6be9bd6c7410'] = {"allow_interruptions": false, "box_mode": "extremes", "classes": ["pygal-chart"], "css": ["file://style.css", "file://graph.css"], "defs": [], "disable_xml_declaration": false, "dots_size": 2.5, "dynamic_print_values": false, "explicit_size": false, "fill": false, "force_uri_protocol": "https", "formatter": null, "half_pie": false, "height": 500, "include_x_axis": false, "inner_radius": 0, "interpolate": null, "interpolation_parameters": {}, "interpolation_precision": 250, "inverse_y_axis": false, "js": ["//kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js"], "legend_at_bottom": false, "legend_at_bottom_columns": null, "legend_box_size": 12, "logarithmic": false, "margin": 20, "margin_bottom": null, "margin_left": null, "margin_right": null, "margin_top": null, "max_scale": 16, "min_scale": 4, "missing_value_fill_truncation": "x", "no_data_text": "No data", "no_prefix": false, "order_min": null, "pretty_print": true, "print_labels": false, "print_values": false, "print_values_position": "center", "print_zeroes": true, "range": null, "rounded_bars": null, "secondary_range": null, "show_dots": true, "show_legend": false, "show_minor_x_labels": false, "show_minor_y_labels": true, "show_only_major_dots": false, "show_x_guides": true, "show_x_labels": true, "show_y_guides": false, "show_y_labels": true, "spacing": 10, "stack_from_top": false, "strict": false, "stroke": true, "stroke_style": null, "style": {"background": "#073642", "ci_colors": [], "colors": ["#b58900", "#cb4b16", "#dc322f", "#d33682", "#6c71c4", "#268bd2", "#2aa198", "#859900"], "dot_opacity": "1", "font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "foreground": "#839496", "foreground_strong": "#fdf6e3", "foreground_subtle": "#657b83", "guide_stroke_color": "black", "guide_stroke_dasharray": "4,4", "label_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "label_font_size": 10, "legend_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "legend_font_size": 14, "major_guide_stroke_color": "black", "major_guide_stroke_dasharray": "6,6", "major_label_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "major_label_font_size": 10, "no_data_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "no_data_font_size": 64, "opacity": ".66", "opacity_hover": ".9", "plot_background": "#002b36", "stroke_opacity": ".8", "stroke_opacity_hover": ".9", "stroke_width": "1", "stroke_width_hover": "4", "title_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "title_font_size": 16, "tooltip_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "tooltip_font_size": 14, "transition": "500ms ease-in", "value_background": "rgba(229, 229, 229, 1)", "value_colors": [], "value_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "value_font_size": 16, "value_label_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "value_label_font_size": 10}, "title": "Temp\u00e9rature de surface mondiale", "tooltip_border_radius": 0, "tooltip_fancy_mode": true, "truncate_label": null, "truncate_legend": null, "width": 800, "x_label_rotation": 20, "x_labels": ["1880", "1881", "1882", "1883", "1884", "1885", "1886", "1887", "1888", "1889", "1890", "1891", "1892", "1893", "1894", "1895", "1896", "1897", "1898", "1899", "1900", "1901", "1902", "1903", "1904", "1905", "1906", "1907", "1908", "1909", "1910", "1911", "1912", "1913", "1914", "1915", "1916", "1917", "1918", "1919", "1920", "1921", "1922", "1923", "1924", "1925", "1926", "1927", "1928", "1929", "1930", "1931", "1932", "1933", "1934", "1935", "1936", "1937", "1938", "1939", "1940", "1941", "1942", "1943", "1944", "1945", "1946", "1947", "1948", "1949", "1950", "1951", "1952", "1953", "1954", "1955", "1956", "1957", "1958", "1959", "1960", "1961", "1962", "1963", "1964", "1965", "1966", "1967", "1968", "1969", "1970", "1971", "1972", "1973", "1974", "1975", "1976", "1977", "1978", "1979", "1980", "1981", "1982", "1983", "1984", "1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"], "x_labels_major": null, "x_labels_major_count": null, "x_labels_major_every": 10, "x_title": null, "xrange": null, "y_label_rotation": 0, "y_labels": null, "y_labels_major": ["0"], "y_labels_major_count": null, "y_labels_major_every": null, "y_title": null, "zero": 0, "legends": [""]}</script>
+    <script type="text/javascript" xlink:href="https://kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js"/>
+  </defs>
+  <title>Température de surface mondiale</title>
+  <g class="graph line-graph vertical">
+    <rect x="0" y="0" width="800" height="500" class="background"/>
+    <g transform="translate(54, 46)" class="plot">
+      <rect x="0" y="0" width="723.4473771011382" height="414" class="background"/>
+      <g class="axis y">
+        <g class="guides">
+          <text x="-5" y="390.22103719504065" class="">-0.4</text>
+          <title>-0.4</title>
+        </g>
+        <g class="guides">
+          <text x="-5" y="362.6247167044394" class="">-0.3</text>
+          <title>-0.3</title>
+        </g>
+        <g class="guides">
+          <text x="-5" y="335.02839621383816" class="">-0.2</text>
+          <title>-0.2</title>
+        </g>
+        <g class="guides">
+          <text x="-5" y="307.43207572323695" class="">-0.1</text>
+          <title>-0.1</title>
+        </g>
+        <g class="guides">
+          <text x="-5" y="279.8357552326356" class="">0</text>
+          <title>0</title>
+        </g>
+        <g class="guides">
+          <text x="-5" y="252.2394347420344" class="">0.1</text>
+          <title>0.1</title>
+        </g>
+        <g class="guides">
+          <text x="-5" y="224.64311425143316" class="">0.2</text>
+          <title>0.2</title>
+        </g>
+        <g class="guides">
+          <text x="-5" y="197.04679376083192" class="">0.3</text>
+          <title>0.3</title>
+        </g>
+        <g class="guides">
+          <text x="-5" y="169.45047327023065" class="">0.4</text>
+          <title>0.4</title>
+        </g>
+        <g class="guides">
+          <text x="-5" y="141.85415277962937" class="">0.5</text>
+          <title>0.5</title>
+        </g>
+        <g class="guides">
+          <text x="-5" y="114.25783228902816" class="">0.6</text>
+          <title>0.6</title>
+        </g>
+        <g class="guides">
+          <text x="-5" y="86.66151179842689" class="">0.7</text>
+          <title>0.7</title>
+        </g>
+        <g class="guides">
+          <text x="-5" y="59.06519130782556" class="">0.8</text>
+          <title>0.8</title>
+        </g>
+        <g class="guides">
+          <text x="-5" y="31.4688708172244" class="">0.9</text>
+          <title>0.9</title>
+        </g>
+      </g>
+      <g class="axis x always_show">
+        <g class="guides">
+          <path d="M13.912450 0.000000 v414.000000" class="major line"/>
+          <text x="13.912449559637272" y="429.0" class="major" transform="rotate(20 13.912450 429.000000)">1880</text>
+        </g>
+        <g class="guides">
+          <path d="M62.899948 0.000000 v414.000000" class="major guide line"/>
+          <text x="62.899948009064296" y="429.0" class="major" transform="rotate(20 62.899948 429.000000)">1890</text>
+        </g>
+        <g class="guides">
+          <path d="M111.887446 0.000000 v414.000000" class="major guide line"/>
+          <text x="111.8874464584913" y="429.0" class="major" transform="rotate(20 111.887446 429.000000)">1900</text>
+        </g>
+        <g class="guides">
+          <path d="M160.874945 0.000000 v414.000000" class="major guide line"/>
+          <text x="160.8749449079183" y="429.0" class="major" transform="rotate(20 160.874945 429.000000)">1910</text>
+        </g>
+        <g class="guides">
+          <path d="M209.862443 0.000000 v414.000000" class="major guide line"/>
+          <text x="209.86244335734534" y="429.0" class="major" transform="rotate(20 209.862443 429.000000)">1920</text>
+        </g>
+        <g class="guides">
+          <path d="M258.849942 0.000000 v414.000000" class="major guide line"/>
+          <text x="258.84994180677234" y="429.0" class="major" transform="rotate(20 258.849942 429.000000)">1930</text>
+        </g>
+        <g class="guides">
+          <path d="M307.837440 0.000000 v414.000000" class="major guide line"/>
+          <text x="307.8374402561994" y="429.0" class="major" transform="rotate(20 307.837440 429.000000)">1940</text>
+        </g>
+        <g class="guides">
+          <path d="M356.824939 0.000000 v414.000000" class="major guide line"/>
+          <text x="356.8249387056264" y="429.0" class="major" transform="rotate(20 356.824939 429.000000)">1950</text>
+        </g>
+        <g class="guides">
+          <path d="M405.812437 0.000000 v414.000000" class="major guide line"/>
+          <text x="405.81243715505343" y="429.0" class="major" transform="rotate(20 405.812437 429.000000)">1960</text>
+        </g>
+        <g class="guides">
+          <path d="M454.799936 0.000000 v414.000000" class="major guide line"/>
+          <text x="454.7999356044804" y="429.0" class="major" transform="rotate(20 454.799936 429.000000)">1970</text>
+        </g>
+        <g class="guides">
+          <path d="M503.787434 0.000000 v414.000000" class="major guide line"/>
+          <text x="503.7874340539074" y="429.0" class="major" transform="rotate(20 503.787434 429.000000)">1980</text>
+        </g>
+        <g class="guides">
+          <path d="M552.774933 0.000000 v414.000000" class="major guide line"/>
+          <text x="552.7749325033344" y="429.0" class="major" transform="rotate(20 552.774933 429.000000)">1990</text>
+        </g>
+        <g class="guides">
+          <path d="M601.762431 0.000000 v414.000000" class="major guide line"/>
+          <text x="601.7624309527614" y="429.0" class="major" transform="rotate(20 601.762431 429.000000)">2000</text>
+        </g>
+        <g class="guides">
+          <path d="M650.749929 0.000000 v414.000000" class="major guide line"/>
+          <text x="650.7499294021884" y="429.0" class="major" transform="rotate(20 650.749929 429.000000)">2010</text>
+        </g>
+        <g class="guides">
+          <path d="M699.737428 0.000000 v414.000000" class="major guide line"/>
+          <text x="699.7374278516155" y="429.0" class="major" transform="rotate(20 699.737428 429.000000)">2020</text>
+        </g>
+      </g>
+      <g class="series serie-0 color-0">
+        <path d="M13.912450 333.368151 L18.811199 314.970604 23.709949 322.329623 28.608699 341.647047 33.507449 372.922877 38.406199 376.602386 43.304949 363.724103 48.203698 380.281896 53.102448 338.887415 58.001198 312.210972 62.899948 377.522264 67.798698 348.086189 72.697448 370.853153 77.596198 380.511865 82.494947 367.403613 87.393697 353.605453 92.292447 311.521064 97.191197 310.141248 102.089947 360.504533 106.988697 333.598120 111.887446 308.761432 116.786196 326.699040 121.684946 359.814625 126.583696 383.961405 131.482446 406.038462 136.381196 357.744901 141.279946 340.497200 146.178695 384.651313 151.077445 395.689841 155.976195 403.278829 160.874945 394.999933 165.773695 397.759565 170.672445 377.752233 175.571194 373.612785 180.469944 322.559592 185.368694 310.141248 190.267444 372.232969 195.166194 400.519197 200.064944 361.194441 204.963694 346.706372 209.862443 341.877016 214.761193 322.559592 219.659943 346.706372 224.558693 342.566924 229.457443 343.256832 234.356193 330.148580 239.254942 295.653180 244.153692 323.939408 249.052442 322.559592 253.951192 363.264165 258.849942 307.381616 263.748692 289.444007 268.647441 306.001800 273.546191 342.566924 278.444941 303.932076 283.343691 317.040328 288.242441 303.932076 293.141191 270.126583 298.039941 268.056859 302.938690 276.335755 307.837440 250.809159 312.736190 238.390815 317.634940 259.777963 322.533690 258.398147 327.432440 221.833022 332.331189 252.878883 337.229939 293.583456 342.128689 285.994467 347.027439 292.893548 351.926189 294.963272 356.824939 317.040328 361.723689 281.855019 366.622438 265.987135 371.521188 246.669711 376.419938 303.932076 381.318688 316.350420 386.217438 333.598120 391.116188 266.677043 396.014937 259.777963 400.913687 268.746767 405.812437 285.304559 410.711187 263.917411 415.609937 270.816491 420.508687 262.537595 425.407437 331.528396 430.306186 307.381616 435.204936 291.513732 440.103686 284.614651 445.002436 300.482536 449.901186 263.227503 454.799936 274.955939 459.698685 306.691708 464.597435 279.095387 469.496185 237.700907 474.394935 305.311892 479.293685 288.754099 484.192435 312.900880 489.091185 234.941274 493.989934 261.157779 498.888684 231.491734 503.787434 212.864218 508.686184 197.686242 513.584934 245.289895 518.483684 198.376150 523.382433 245.289895 528.281183 249.429343 533.179933 232.871550 538.078683 194.236702 542.977433 181.818358 547.876183 209.414678 552.774933 163.880749 557.673682 174.229369 562.572432 225.282562 567.471182 216.313758 572.369932 196.996334 577.268682 158.361485 582.167432 190.787162 587.066181 148.702773 591.964931 108.688108 596.863681 172.159645 601.762431 171.469737 606.661181 132.144981 611.559931 114.207372 616.458680 113.517464 621.357430 134.904613 626.256180 96.959672 631.154930 107.308292 636.053680 105.928476 640.952430 136.284429 645.851180 103.858752 650.749929 83.161512 655.648679 119.036728 660.547429 107.308292 665.446179 96.269764 670.344929 77.642248 675.243679 34.867951 680.142428 7.961538 685.041178 32.798227 689.939928 56.255099 694.838678 19.689975 699.737428 10.721171 704.636178 52.115651 709.534928 41.077123" class="line reactive nofill"/>
+      </g>
+    </g>
+    <g class="titles">
+      <text x="400.0" y="26" class="title plot_title">Température de surface mondiale</text>
+    </g>
+    <g transform="translate(54, 46)" class="plot overlay">
+      <g class="series serie-0 color-0">
+        <g class="dots">
+          <circle cx="13.912449559637272" cy="333.3681509132116" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.2066666667</desc>
+          <desc class="x top">13.912449559637272</desc>
+          <desc class="y top">333.3681509132116</desc>
+          <desc class="x_label">1880</desc>
+        </g>
+        <g class="dots">
+          <circle cx="18.811199404579977" cy="314.9706039194774" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.14</desc>
+          <desc class="x top">18.811199404579977</desc>
+          <desc class="y top">314.9706039194774</desc>
+          <desc class="x_label">1881</desc>
+        </g>
+        <g class="dots">
+          <circle cx="23.709949249522676" cy="322.3296227169711" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1666666667</desc>
+          <desc class="x top">23.709949249522676</desc>
+          <desc class="y top">322.3296227169711</desc>
+          <desc class="x_label">1882</desc>
+        </g>
+        <g class="dots">
+          <circle cx="28.608699094465376" cy="341.64704706039197" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.2366666667</desc>
+          <desc class="x top">28.608699094465376</desc>
+          <desc class="y top">341.64704706039197</desc>
+          <desc class="x_label">1883</desc>
+        </g>
+        <g class="dots">
+          <circle cx="33.50744893940808" cy="372.92287694974004" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.35</desc>
+          <desc class="x top">33.50744893940808</desc>
+          <desc class="y top">372.92287694974004</desc>
+          <desc class="x_label">1884</desc>
+        </g>
+        <g class="dots">
+          <circle cx="38.40619878435078" cy="376.60238634848685" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.3633333333</desc>
+          <desc class="x top">38.40619878435078</desc>
+          <desc class="y top">376.60238634848685</desc>
+          <desc class="x_label">1885</desc>
+        </g>
+        <g class="dots">
+          <circle cx="43.304948629293484" cy="363.72410345287295" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.3166666667</desc>
+          <desc class="x top">43.304948629293484</desc>
+          <desc class="y top">363.72410345287295</desc>
+          <desc class="x_label">1886</desc>
+        </g>
+        <g class="dots">
+          <circle cx="48.20369847423618" cy="380.2818957472337" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.3766666667</desc>
+          <desc class="x top">48.20369847423618</desc>
+          <desc class="y top">380.2818957472337</desc>
+          <desc class="x_label">1887</desc>
+        </g>
+        <g class="dots">
+          <circle cx="53.10244831917888" cy="338.8874150113318" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.2266666667</desc>
+          <desc class="x top">53.10244831917888</desc>
+          <desc class="y top">338.8874150113318</desc>
+          <desc class="x_label">1888</desc>
+        </g>
+        <g class="dots">
+          <circle cx="58.00119816412158" cy="312.2109718704173" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.13</desc>
+          <desc class="x top">58.00119816412158</desc>
+          <desc class="y top">312.2109718704173</desc>
+          <desc class="x_label">1889</desc>
+        </g>
+        <g class="dots">
+          <circle cx="62.899948009064296" cy="377.52226369817356" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.3666666667</desc>
+          <desc class="x top">62.899948009064296</desc>
+          <desc class="y top">377.52226369817356</desc>
+          <desc class="x_label">1890</desc>
+        </g>
+        <g class="dots">
+          <circle cx="67.79869785400699" cy="348.0861885081989" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.26</desc>
+          <desc class="x top">67.79869785400699</desc>
+          <desc class="y top">348.0861885081989</desc>
+          <desc class="x_label">1891</desc>
+        </g>
+        <g class="dots">
+          <circle cx="72.69744769894969" cy="370.85315291294495" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.3425</desc>
+          <desc class="x top">72.69744769894969</desc>
+          <desc class="y top">370.85315291294495</desc>
+          <desc class="x_label">1892</desc>
+        </g>
+        <g class="dots">
+          <circle cx="77.59619754389239" cy="380.51186508465537" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.3775</desc>
+          <desc class="x top">77.59619754389239</desc>
+          <desc class="y top">380.51186508465537</desc>
+          <desc class="x_label">1893</desc>
+        </g>
+        <g class="dots">
+          <circle cx="82.49494738883509" cy="367.4036128516198" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.33</desc>
+          <desc class="x top">82.49494738883509</desc>
+          <desc class="y top">367.4036128516198</desc>
+          <desc class="x_label">1894</desc>
+        </g>
+        <g class="dots">
+          <circle cx="87.39369723377779" cy="353.6054526063192" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.28</desc>
+          <desc class="x top">87.39369723377779</desc>
+          <desc class="y top">353.6054526063192</desc>
+          <desc class="x_label">1895</desc>
+        </g>
+        <g class="dots">
+          <circle cx="92.2924470787205" cy="311.5210638581523" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1275</desc>
+          <desc class="x top">92.2924470787205</desc>
+          <desc class="y top">311.5210638581523</desc>
+          <desc class="x_label">1896</desc>
+        </g>
+        <g class="dots">
+          <circle cx="97.1911969236632" cy="310.1412478336222" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1225</desc>
+          <desc class="x top">97.1911969236632</desc>
+          <desc class="y top">310.1412478336222</desc>
+          <desc class="x_label">1897</desc>
+        </g>
+        <g class="dots">
+          <circle cx="102.08994676860588" cy="360.5045327289695" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.305</desc>
+          <desc class="x top">102.08994676860588</desc>
+          <desc class="y top">360.5045327289695</desc>
+          <desc class="x_label">1898</desc>
+        </g>
+        <g class="dots">
+          <circle cx="106.98869661354857" cy="333.59812025063326" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.2075</desc>
+          <desc class="x top">106.98869661354857</desc>
+          <desc class="y top">333.59812025063326</desc>
+          <desc class="x_label">1899</desc>
+        </g>
+        <g class="dots">
+          <circle cx="111.8874464584913" cy="308.76143180909213" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1175</desc>
+          <desc class="x top">111.8874464584913</desc>
+          <desc class="y top">308.76143180909213</desc>
+          <desc class="x_label">1900</desc>
+        </g>
+        <g class="dots">
+          <circle cx="116.786196303434" cy="326.6990401279829" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1825</desc>
+          <desc class="x top">116.786196303434</desc>
+          <desc class="y top">326.6990401279829</desc>
+          <desc class="x_label">1901</desc>
+        </g>
+        <g class="dots">
+          <circle cx="121.68494614837668" cy="359.81462471670443" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.3025</desc>
+          <desc class="x top">121.68494614837668</desc>
+          <desc class="y top">359.81462471670443</desc>
+          <desc class="x_label">1902</desc>
+        </g>
+        <g class="dots">
+          <circle cx="126.5836959933194" cy="383.9614051459805" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.39</desc>
+          <desc class="x top">126.5836959933194</desc>
+          <desc class="y top">383.9614051459805</desc>
+          <desc class="x_label">1903</desc>
+        </g>
+        <g class="dots">
+          <circle cx="131.4824458382621" cy="406.03846153846155" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.47</desc>
+          <desc class="x top">131.4824458382621</desc>
+          <desc class="y top">406.03846153846155</desc>
+          <desc class="x_label">1904</desc>
+        </g>
+        <g class="dots">
+          <circle cx="136.38119568320477" cy="357.7449006799094" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.295</desc>
+          <desc class="x top">136.38119568320477</desc>
+          <desc class="y top">357.7449006799094</desc>
+          <desc class="x_label">1905</desc>
+        </g>
+        <g class="dots">
+          <circle cx="141.2799455281475" cy="340.4972003732836" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.2325</desc>
+          <desc class="x top">141.2799455281475</desc>
+          <desc class="y top">340.4972003732836</desc>
+          <desc class="x_label">1906</desc>
+        </g>
+        <g class="dots">
+          <circle cx="146.17869537309022" cy="384.65131315824556" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.3925</desc>
+          <desc class="x top">146.17869537309022</desc>
+          <desc class="y top">384.65131315824556</desc>
+          <desc class="x_label">1907</desc>
+        </g>
+        <g class="dots">
+          <circle cx="151.0774452180329" cy="395.6898413544861" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.4325</desc>
+          <desc class="x top">151.0774452180329</desc>
+          <desc class="y top">395.6898413544861</desc>
+          <desc class="x_label">1908</desc>
+        </g>
+        <g class="dots">
+          <circle cx="155.97619506297562" cy="403.2788294894014" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.46</desc>
+          <desc class="x top">155.97619506297562</desc>
+          <desc class="y top">403.2788294894014</desc>
+          <desc class="x_label">1909</desc>
+        </g>
+        <g class="dots">
+          <circle cx="160.8749449079183" cy="394.999933342221" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.43</desc>
+          <desc class="x top">160.8749449079183</desc>
+          <desc class="y top">394.999933342221</desc>
+          <desc class="x_label">1910</desc>
+        </g>
+        <g class="dots">
+          <circle cx="165.773694752861" cy="397.75956539128117" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.44</desc>
+          <desc class="x top">165.773694752861</desc>
+          <desc class="y top">397.75956539128117</desc>
+          <desc class="x_label">1911</desc>
+        </g>
+        <g class="dots">
+          <circle cx="170.67244459780372" cy="377.7522330355953" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.3675</desc>
+          <desc class="x top">170.67244459780372</desc>
+          <desc class="y top">377.7522330355953</desc>
+          <desc class="x_label">1912</desc>
+        </g>
+        <g class="dots">
+          <circle cx="175.5711944427464" cy="373.6127849620051" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.3525</desc>
+          <desc class="x top">175.5711944427464</desc>
+          <desc class="y top">373.6127849620051</desc>
+          <desc class="x_label">1913</desc>
+        </g>
+        <g class="dots">
+          <circle cx="180.4699442876891" cy="322.55959205439274" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1675</desc>
+          <desc class="x top">180.4699442876891</desc>
+          <desc class="y top">322.55959205439274</desc>
+          <desc class="x_label">1914</desc>
+        </g>
+        <g class="dots">
+          <circle cx="185.36869413263182" cy="310.1412478336222" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1225</desc>
+          <desc class="x top">185.36869413263182</desc>
+          <desc class="y top">310.1412478336222</desc>
+          <desc class="x_label">1915</desc>
+        </g>
+        <g class="dots">
+          <circle cx="190.26744397757454" cy="372.232968937475" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.3475</desc>
+          <desc class="x top">190.26744397757454</desc>
+          <desc class="y top">372.232968937475</desc>
+          <desc class="x_label">1916</desc>
+        </g>
+        <g class="dots">
+          <circle cx="195.16619382251724" cy="400.51919744034126" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.45</desc>
+          <desc class="x top">195.16619382251724</desc>
+          <desc class="y top">400.51919744034126</desc>
+          <desc class="x_label">1917</desc>
+        </g>
+        <g class="dots">
+          <circle cx="200.06494366745991" cy="361.19444074123453" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.3075</desc>
+          <desc class="x top">200.06494366745991</desc>
+          <desc class="y top">361.19444074123453</desc>
+          <desc class="x_label">1918</desc>
+        </g>
+        <g class="dots">
+          <circle cx="204.96369351240264" cy="346.7063724836689" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.255</desc>
+          <desc class="x top">204.96369351240264</desc>
+          <desc class="y top">346.7063724836689</desc>
+          <desc class="x_label">1919</desc>
+        </g>
+        <g class="dots">
+          <circle cx="209.86244335734534" cy="341.87701639781363" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.2375</desc>
+          <desc class="x top">209.86244335734534</desc>
+          <desc class="y top">341.87701639781363</desc>
+          <desc class="x_label">1920</desc>
+        </g>
+        <g class="dots">
+          <circle cx="214.76119320228804" cy="322.55959205439274" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1675</desc>
+          <desc class="x top">214.76119320228804</desc>
+          <desc class="y top">322.55959205439274</desc>
+          <desc class="x_label">1921</desc>
+        </g>
+        <g class="dots">
+          <circle cx="219.65994304723074" cy="346.7063724836689" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.255</desc>
+          <desc class="x top">219.65994304723074</desc>
+          <desc class="y top">346.7063724836689</desc>
+          <desc class="x_label">1922</desc>
+        </g>
+        <g class="dots">
+          <circle cx="224.5586928921734" cy="342.5669244100787" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.24</desc>
+          <desc class="x top">224.5586928921734</desc>
+          <desc class="y top">342.5669244100787</desc>
+          <desc class="x_label">1923</desc>
+        </g>
+        <g class="dots">
+          <circle cx="229.4574427371161" cy="343.2568324223437" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.2425</desc>
+          <desc class="x top">229.4574427371161</desc>
+          <desc class="y top">343.2568324223437</desc>
+          <desc class="x_label">1924</desc>
+        </g>
+        <g class="dots">
+          <circle cx="234.35619258205887" cy="330.1485801893081" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.195</desc>
+          <desc class="x top">234.35619258205887</desc>
+          <desc class="y top">330.1485801893081</desc>
+          <desc class="x_label">1925</desc>
+        </g>
+        <g class="dots">
+          <circle cx="239.25494242700157" cy="295.6531795760566" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.07</desc>
+          <desc class="x top">239.25494242700157</desc>
+          <desc class="y top">295.6531795760566</desc>
+          <desc class="x_label">1926</desc>
+        </g>
+        <g class="dots">
+          <circle cx="244.15369227194427" cy="323.93940807892284" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1725</desc>
+          <desc class="x top">244.15369227194427</desc>
+          <desc class="y top">323.93940807892284</desc>
+          <desc class="x_label">1927</desc>
+        </g>
+        <g class="dots">
+          <circle cx="249.05244211688694" cy="322.55959205439274" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1675</desc>
+          <desc class="x top">249.05244211688694</desc>
+          <desc class="y top">322.55959205439274</desc>
+          <desc class="x_label">1928</desc>
+        </g>
+        <g class="dots">
+          <circle cx="253.95119196182966" cy="363.2641647780296" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.315</desc>
+          <desc class="x top">253.95119196182966</desc>
+          <desc class="y top">363.2641647780296</desc>
+          <desc class="x_label">1929</desc>
+        </g>
+        <g class="dots">
+          <circle cx="258.84994180677234" cy="307.3816157845621" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1125</desc>
+          <desc class="x top">258.84994180677234</desc>
+          <desc class="y top">307.3816157845621</desc>
+          <desc class="x_label">1930</desc>
+        </g>
+        <g class="dots">
+          <circle cx="263.7486916517151" cy="289.44400746567123" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.0475</desc>
+          <desc class="x top">263.7486916517151</desc>
+          <desc class="y top">289.44400746567123</desc>
+          <desc class="x_label">1931</desc>
+        </g>
+        <g class="dots">
+          <circle cx="268.64744149665773" cy="306.001799760032" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1075</desc>
+          <desc class="x top">268.64744149665773</desc>
+          <desc class="y top">306.001799760032</desc>
+          <desc class="x_label">1932</desc>
+        </g>
+        <g class="dots">
+          <circle cx="273.5461913416005" cy="342.5669244100787" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.24</desc>
+          <desc class="x top">273.5461913416005</desc>
+          <desc class="y top">342.5669244100787</desc>
+          <desc class="x_label">1933</desc>
+        </g>
+        <g class="dots">
+          <circle cx="278.44494118654313" cy="303.93207572323695" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1</desc>
+          <desc class="x top">278.44494118654313</desc>
+          <desc class="y top">303.93207572323695</desc>
+          <desc class="x_label">1934</desc>
+        </g>
+        <g class="dots">
+          <circle cx="283.34369103148583" cy="317.0403279562725" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1475</desc>
+          <desc class="x top">283.34369103148583</desc>
+          <desc class="y top">317.0403279562725</desc>
+          <desc class="x_label">1935</desc>
+        </g>
+        <g class="dots">
+          <circle cx="288.24244087642853" cy="303.93207572323695" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1</desc>
+          <desc class="x top">288.24244087642853</desc>
+          <desc class="y top">303.93207572323695</desc>
+          <desc class="x_label">1936</desc>
+        </g>
+        <g class="dots">
+          <circle cx="293.1411907213713" cy="270.1265831222504" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.0225</desc>
+          <desc class="x top">293.1411907213713</desc>
+          <desc class="y top">270.1265831222504</desc>
+          <desc class="x_label">1937</desc>
+        </g>
+        <g class="dots">
+          <circle cx="298.039940566314" cy="268.05685908545524" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.03</desc>
+          <desc class="x top">298.039940566314</desc>
+          <desc class="y top">268.05685908545524</desc>
+          <desc class="x_label">1938</desc>
+        </g>
+        <g class="dots">
+          <circle cx="302.9386904112567" cy="276.3357552326356" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0</desc>
+          <desc class="x top">302.9386904112567</desc>
+          <desc class="y top">276.3357552326356</desc>
+          <desc class="x_label">1939</desc>
+        </g>
+        <g class="dots">
+          <circle cx="307.8374402561994" cy="250.8091587788295" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.0925</desc>
+          <desc class="x top">307.8374402561994</desc>
+          <desc class="y top">250.8091587788295</desc>
+          <desc class="x_label">1940</desc>
+        </g>
+        <g class="dots">
+          <circle cx="312.73619010114203" cy="238.39081455805893" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.1375</desc>
+          <desc class="x top">312.73619010114203</desc>
+          <desc class="y top">238.39081455805893</desc>
+          <desc class="x_label">1941</desc>
+        </g>
+        <g class="dots">
+          <circle cx="317.6349399460848" cy="259.7779629382749" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.06</desc>
+          <desc class="x top">317.6349399460848</desc>
+          <desc class="y top">259.7779629382749</desc>
+          <desc class="x_label">1942</desc>
+        </g>
+        <g class="dots">
+          <circle cx="322.5336897910275" cy="258.3981469137448" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.065</desc>
+          <desc class="x top">322.5336897910275</desc>
+          <desc class="y top">258.3981469137448</desc>
+          <desc class="x_label">1943</desc>
+        </g>
+        <g class="dots">
+          <circle cx="327.4324396359702" cy="221.8330222636982" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.1975</desc>
+          <desc class="x top">327.4324396359702</desc>
+          <desc class="y top">221.8330222636982</desc>
+          <desc class="x_label">1944</desc>
+        </g>
+        <g class="dots">
+          <circle cx="332.3311894809128" cy="252.8788828156246" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.085</desc>
+          <desc class="x top">332.3311894809128</desc>
+          <desc class="y top">252.8788828156246</desc>
+          <desc class="x_label">1945</desc>
+        </g>
+        <g class="dots">
+          <circle cx="337.2299393258556" cy="293.5834555392614" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.0625</desc>
+          <desc class="x top">337.2299393258556</desc>
+          <desc class="y top">293.5834555392614</desc>
+          <desc class="x_label">1946</desc>
+        </g>
+        <g class="dots">
+          <circle cx="342.1286891707983" cy="285.9944674043461" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.035</desc>
+          <desc class="x top">342.1286891707983</desc>
+          <desc class="y top">285.9944674043461</desc>
+          <desc class="x_label">1947</desc>
+        </g>
+        <g class="dots">
+          <circle cx="347.0274390157409" cy="292.8935475269964" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.06</desc>
+          <desc class="x top">347.0274390157409</desc>
+          <desc class="y top">292.8935475269964</desc>
+          <desc class="x_label">1948</desc>
+        </g>
+        <g class="dots">
+          <circle cx="351.92618886068374" cy="294.9632715637915" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.0675</desc>
+          <desc class="x top">351.92618886068374</desc>
+          <desc class="y top">294.9632715637915</desc>
+          <desc class="x_label">1949</desc>
+        </g>
+        <g class="dots">
+          <circle cx="356.8249387056264" cy="317.0403279562725" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1475</desc>
+          <desc class="x top">356.8249387056264</desc>
+          <desc class="y top">317.0403279562725</desc>
+          <desc class="x_label">1950</desc>
+        </g>
+        <g class="dots">
+          <circle cx="361.7236885505691" cy="281.8550193307559" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.02</desc>
+          <desc class="x top">361.7236885505691</desc>
+          <desc class="y top">281.8550193307559</desc>
+          <desc class="x_label">1951</desc>
+        </g>
+        <g class="dots">
+          <circle cx="366.6224383955118" cy="265.9871350486602" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.0375</desc>
+          <desc class="x left top">366.6224383955118</desc>
+          <desc class="y left top">265.9871350486602</desc>
+          <desc class="x_label">1952</desc>
+        </g>
+        <g class="dots">
+          <circle cx="371.5211882404545" cy="246.6697107052393" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.1075</desc>
+          <desc class="x left top">371.5211882404545</desc>
+          <desc class="y left top">246.6697107052393</desc>
+          <desc class="x_label">1953</desc>
+        </g>
+        <g class="dots">
+          <circle cx="376.4199380853971" cy="303.9320757232369" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1</desc>
+          <desc class="x left top">376.4199380853971</desc>
+          <desc class="y left top">303.9320757232369</desc>
+          <desc class="x_label">1954</desc>
+        </g>
+        <g class="dots">
+          <circle cx="381.3186879303399" cy="316.3504199440075" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.145</desc>
+          <desc class="x left top">381.3186879303399</desc>
+          <desc class="y left top">316.3504199440075</desc>
+          <desc class="x_label">1955</desc>
+        </g>
+        <g class="dots">
+          <circle cx="386.2174377752826" cy="333.59812025063326" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.2075</desc>
+          <desc class="x left top">386.2174377752826</desc>
+          <desc class="y left top">333.59812025063326</desc>
+          <desc class="x_label">1956</desc>
+        </g>
+        <g class="dots">
+          <circle cx="391.11618762022533" cy="266.67704306092526" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.035</desc>
+          <desc class="x left top">391.11618762022533</desc>
+          <desc class="y left top">266.67704306092526</desc>
+          <desc class="x_label">1957</desc>
+        </g>
+        <g class="dots">
+          <circle cx="396.01493746516803" cy="259.7779629382749" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.06</desc>
+          <desc class="x left top">396.01493746516803</desc>
+          <desc class="y left top">259.7779629382749</desc>
+          <desc class="x_label">1958</desc>
+        </g>
+        <g class="dots">
+          <circle cx="400.91368731011073" cy="268.7467670977203" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.0275</desc>
+          <desc class="x left top">400.91368731011073</desc>
+          <desc class="y left top">268.7467670977203</desc>
+          <desc class="x_label">1959</desc>
+        </g>
+        <g class="dots">
+          <circle cx="405.81243715505343" cy="285.30455939208105" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.0325</desc>
+          <desc class="x left top">405.81243715505343</desc>
+          <desc class="y left top">285.30455939208105</desc>
+          <desc class="x_label">1960</desc>
+        </g>
+        <g class="dots">
+          <circle cx="410.7111869999961" cy="263.9174110118651" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.045</desc>
+          <desc class="x left top">410.7111869999961</desc>
+          <desc class="y left top">263.9174110118651</desc>
+          <desc class="x_label">1961</desc>
+        </g>
+        <g class="dots">
+          <circle cx="415.60993684493883" cy="270.81649113451545" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.02</desc>
+          <desc class="x left top">415.60993684493883</desc>
+          <desc class="y left top">270.81649113451545</desc>
+          <desc class="x_label">1962</desc>
+        </g>
+        <g class="dots">
+          <circle cx="420.5086866898815" cy="262.53759498733507" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.05</desc>
+          <desc class="x left top">420.5086866898815</desc>
+          <desc class="y left top">262.53759498733507</desc>
+          <desc class="x_label">1963</desc>
+        </g>
+        <g class="dots">
+          <circle cx="425.40743653482417" cy="331.52839621383816" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.2</desc>
+          <desc class="x left top">425.40743653482417</desc>
+          <desc class="y left top">331.52839621383816</desc>
+          <desc class="x_label">1964</desc>
+        </g>
+        <g class="dots">
+          <circle cx="430.3061863797669" cy="307.3816157845621" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1125</desc>
+          <desc class="x left top">430.3061863797669</desc>
+          <desc class="y left top">307.3816157845621</desc>
+          <desc class="x_label">1965</desc>
+        </g>
+        <g class="dots">
+          <circle cx="435.20493622470957" cy="291.5137315024663" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.055</desc>
+          <desc class="x left top">435.20493622470957</desc>
+          <desc class="y left top">291.5137315024663</desc>
+          <desc class="x_label">1966</desc>
+        </g>
+        <g class="dots">
+          <circle cx="440.10368606965227" cy="284.614651379816" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.03</desc>
+          <desc class="x left top">440.10368606965227</desc>
+          <desc class="y left top">284.614651379816</desc>
+          <desc class="x_label">1967</desc>
+        </g>
+        <g class="dots">
+          <circle cx="445.00243591459497" cy="300.48253566191175" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.0875</desc>
+          <desc class="x left top">445.00243591459497</desc>
+          <desc class="y left top">300.48253566191175</desc>
+          <desc class="x_label">1968</desc>
+        </g>
+        <g class="dots">
+          <circle cx="449.9011857595378" cy="263.22750299960006" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.0475</desc>
+          <desc class="x left top">449.9011857595378</desc>
+          <desc class="y left top">263.22750299960006</desc>
+          <desc class="x_label">1969</desc>
+        </g>
+        <g class="dots">
+          <circle cx="454.7999356044804" cy="274.95593920810563" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.005</desc>
+          <desc class="x left top">454.7999356044804</desc>
+          <desc class="y left top">274.95593920810563</desc>
+          <desc class="x_label">1970</desc>
+        </g>
+        <g class="dots">
+          <circle cx="459.6986854494231" cy="306.69170777229704" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.11</desc>
+          <desc class="x left top">459.6986854494231</desc>
+          <desc class="y left top">306.69170777229704</desc>
+          <desc class="x_label">1971</desc>
+        </g>
+        <g class="dots">
+          <circle cx="464.5974352943658" cy="279.0953872816958" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.01</desc>
+          <desc class="x left top">464.5974352943658</desc>
+          <desc class="y left top">279.0953872816958</desc>
+          <desc class="x_label">1972</desc>
+        </g>
+        <g class="dots">
+          <circle cx="469.4961851393085" cy="237.7009065457939" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.14</desc>
+          <desc class="x left top">469.4961851393085</desc>
+          <desc class="y left top">237.7009065457939</desc>
+          <desc class="x_label">1973</desc>
+        </g>
+        <g class="dots">
+          <circle cx="474.3949349842512" cy="305.311891747767" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.105</desc>
+          <desc class="x left top">474.3949349842512</desc>
+          <desc class="y left top">305.311891747767</desc>
+          <desc class="x_label">1974</desc>
+        </g>
+        <g class="dots">
+          <circle cx="479.2936848291939" cy="288.7540994534062" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.045</desc>
+          <desc class="x left top">479.2936848291939</desc>
+          <desc class="y left top">288.7540994534062</desc>
+          <desc class="x_label">1975</desc>
+        </g>
+        <g class="dots">
+          <circle cx="484.1924346741366" cy="312.9008798826823" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">-0.1325</desc>
+          <desc class="x left top">484.1924346741366</desc>
+          <desc class="y left top">312.9008798826823</desc>
+          <desc class="x_label">1976</desc>
+        </g>
+        <g class="dots">
+          <circle cx="489.09118451907926" cy="234.94127449673377" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.15</desc>
+          <desc class="x left top">489.09118451907926</desc>
+          <desc class="y left top">234.94127449673377</desc>
+          <desc class="x_label">1977</desc>
+        </g>
+        <g class="dots">
+          <circle cx="493.98993436402196" cy="261.15777896280497" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.055</desc>
+          <desc class="x left top">493.98993436402196</desc>
+          <desc class="y left top">261.15777896280497</desc>
+          <desc class="x_label">1978</desc>
+        </g>
+        <g class="dots">
+          <circle cx="498.88868420896466" cy="231.4917344354086" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.1625</desc>
+          <desc class="x left top">498.88868420896466</desc>
+          <desc class="y left top">231.4917344354086</desc>
+          <desc class="x_label">1979</desc>
+        </g>
+        <g class="dots">
+          <circle cx="503.7874340539074" cy="212.86421810425276" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.23</desc>
+          <desc class="x left top">503.7874340539074</desc>
+          <desc class="y left top">212.86421810425276</desc>
+          <desc class="x_label">1980</desc>
+        </g>
+        <g class="dots">
+          <circle cx="508.6861838988501" cy="197.68624183442208" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.285</desc>
+          <desc class="x left">508.6861838988501</desc>
+          <desc class="y left">197.68624183442208</desc>
+          <desc class="x_label">1981</desc>
+        </g>
+        <g class="dots">
+          <circle cx="513.5849337437928" cy="245.28989468070924" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.1125</desc>
+          <desc class="x left top">513.5849337437928</desc>
+          <desc class="y left top">245.28989468070924</desc>
+          <desc class="x_label">1982</desc>
+        </g>
+        <g class="dots">
+          <circle cx="518.4836835887356" cy="198.3761498466871" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.2825</desc>
+          <desc class="x left">518.4836835887356</desc>
+          <desc class="y left">198.3761498466871</desc>
+          <desc class="x_label">1983</desc>
+        </g>
+        <g class="dots">
+          <circle cx="523.3824334336782" cy="245.28989468070924" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.1125</desc>
+          <desc class="x left top">523.3824334336782</desc>
+          <desc class="y left top">245.28989468070924</desc>
+          <desc class="x_label">1984</desc>
+        </g>
+        <g class="dots">
+          <circle cx="528.2811832786209" cy="249.42934275429943" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.0975</desc>
+          <desc class="x left top">528.2811832786209</desc>
+          <desc class="y left top">249.42934275429943</desc>
+          <desc class="x_label">1985</desc>
+        </g>
+        <g class="dots">
+          <circle cx="533.1799331235637" cy="232.87155045993867" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.1575</desc>
+          <desc class="x left top">533.1799331235637</desc>
+          <desc class="y left top">232.87155045993867</desc>
+          <desc class="x_label">1986</desc>
+        </g>
+        <g class="dots">
+          <circle cx="538.0786829685063" cy="194.23670177309697" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.2975</desc>
+          <desc class="x left">538.0786829685063</desc>
+          <desc class="y left">194.23670177309697</desc>
+          <desc class="x_label">1987</desc>
+        </g>
+        <g class="dots">
+          <circle cx="542.977432813449" cy="181.81835755232632" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.3425</desc>
+          <desc class="x left">542.977432813449</desc>
+          <desc class="y left">181.81835755232632</desc>
+          <desc class="x_label">1988</desc>
+        </g>
+        <g class="dots">
+          <circle cx="547.8761826583917" cy="209.4146780429276" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.2425</desc>
+          <desc class="x left top">547.8761826583917</desc>
+          <desc class="y left top">209.4146780429276</desc>
+          <desc class="x_label">1989</desc>
+        </g>
+        <g class="dots">
+          <circle cx="552.7749325033344" cy="163.88074923343552" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.4075</desc>
+          <desc class="x left">552.7749325033344</desc>
+          <desc class="y left">163.88074923343552</desc>
+          <desc class="x_label">1990</desc>
+        </g>
+        <g class="dots">
+          <circle cx="557.6736823482771" cy="174.22936941741102" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.37</desc>
+          <desc class="x left">557.6736823482771</desc>
+          <desc class="y left">174.22936941741102</desc>
+          <desc class="x_label">1991</desc>
+        </g>
+        <g class="dots">
+          <circle cx="562.5724321932198" cy="225.28256232502332" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.185</desc>
+          <desc class="x left top">562.5724321932198</desc>
+          <desc class="y left top">225.28256232502332</desc>
+          <desc class="x_label">1992</desc>
+        </g>
+        <g class="dots">
+          <circle cx="567.4711820381626" cy="216.31375816557792" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.2175</desc>
+          <desc class="x left top">567.4711820381626</desc>
+          <desc class="y left top">216.31375816557792</desc>
+          <desc class="x_label">1993</desc>
+        </g>
+        <g class="dots">
+          <circle cx="572.3699318831053" cy="196.99633382215708" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.2875</desc>
+          <desc class="x left">572.3699318831053</desc>
+          <desc class="y left">196.99633382215708</desc>
+          <desc class="x_label">1994</desc>
+        </g>
+        <g class="dots">
+          <circle cx="577.2686817280479" cy="158.3614851353153" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.4275</desc>
+          <desc class="x left">577.2686817280479</desc>
+          <desc class="y left">158.3614851353153</desc>
+          <desc class="x_label">1995</desc>
+        </g>
+        <g class="dots">
+          <circle cx="582.1674315729906" cy="190.78716171177177" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.31</desc>
+          <desc class="x left">582.1674315729906</desc>
+          <desc class="y left">190.78716171177177</desc>
+          <desc class="x_label">1996</desc>
+        </g>
+        <g class="dots">
+          <circle cx="587.0661814179334" cy="148.70277296360484" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.4625</desc>
+          <desc class="x left">587.0661814179334</desc>
+          <desc class="y left">148.70277296360484</desc>
+          <desc class="x_label">1997</desc>
+        </g>
+        <g class="dots">
+          <circle cx="591.964931262876" cy="108.68810825223306" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.6075</desc>
+          <desc class="x left">591.964931262876</desc>
+          <desc class="y left">108.68810825223306</desc>
+          <desc class="x_label">1998</desc>
+        </g>
+        <g class="dots">
+          <circle cx="596.8636811078187" cy="172.15964538061593" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.3775</desc>
+          <desc class="x left">596.8636811078187</desc>
+          <desc class="y left">172.15964538061593</desc>
+          <desc class="x_label">1999</desc>
+        </g>
+        <g class="dots">
+          <circle cx="601.7624309527614" cy="171.4697373683509" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.38</desc>
+          <desc class="x left">601.7624309527614</desc>
+          <desc class="y left">171.4697373683509</desc>
+          <desc class="x_label">2000</desc>
+        </g>
+        <g class="dots">
+          <circle cx="606.6611807977041" cy="132.1449806692441" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.5225</desc>
+          <desc class="x left">606.6611807977041</desc>
+          <desc class="y left">132.1449806692441</desc>
+          <desc class="x_label">2001</desc>
+        </g>
+        <g class="dots">
+          <circle cx="611.5599306426468" cy="114.2073723503533" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.5875</desc>
+          <desc class="x left">611.5599306426468</desc>
+          <desc class="y left">114.2073723503533</desc>
+          <desc class="x_label">2002</desc>
+        </g>
+        <g class="dots">
+          <circle cx="616.4586804875895" cy="113.5174643380883" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.59</desc>
+          <desc class="x left">616.4586804875895</desc>
+          <desc class="y left">113.5174643380883</desc>
+          <desc class="x_label">2003</desc>
+        </g>
+        <g class="dots">
+          <circle cx="621.3574303325322" cy="134.90461271830424" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.5125</desc>
+          <desc class="x left">621.3574303325322</desc>
+          <desc class="y left">134.90461271830424</desc>
+          <desc class="x_label">2004</desc>
+        </g>
+        <g class="dots">
+          <circle cx="626.256180177475" cy="96.9596720437275" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.65</desc>
+          <desc class="x left">626.256180177475</desc>
+          <desc class="y left">96.9596720437275</desc>
+          <desc class="x_label">2005</desc>
+        </g>
+        <g class="dots">
+          <circle cx="631.1549300224177" cy="107.30829222770296" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.6125</desc>
+          <desc class="x left">631.1549300224177</desc>
+          <desc class="y left">107.30829222770296</desc>
+          <desc class="x_label">2006</desc>
+        </g>
+        <g class="dots">
+          <circle cx="636.0536798673603" cy="105.92847620317292" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.6175</desc>
+          <desc class="x left">636.0536798673603</desc>
+          <desc class="y left">105.92847620317292</desc>
+          <desc class="x_label">2007</desc>
+        </g>
+        <g class="dots">
+          <circle cx="640.9524297123031" cy="136.28442874283428" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.5075</desc>
+          <desc class="x left">640.9524297123031</desc>
+          <desc class="y left">136.28442874283428</desc>
+          <desc class="x_label">2008</desc>
+        </g>
+        <g class="dots">
+          <circle cx="645.8511795572458" cy="103.85875216637777" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.625</desc>
+          <desc class="x left">645.8511795572458</desc>
+          <desc class="y left">103.85875216637777</desc>
+          <desc class="x_label">2009</desc>
+        </g>
+        <g class="dots">
+          <circle cx="650.7499294021884" cy="83.16151179842689" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.7</desc>
+          <desc class="x left">650.7499294021884</desc>
+          <desc class="y left">83.16151179842689</desc>
+          <desc class="x_label">2010</desc>
+        </g>
+        <g class="dots">
+          <circle cx="655.6486792471312" cy="119.03672843620853" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.57</desc>
+          <desc class="x left">655.6486792471312</desc>
+          <desc class="y left">119.03672843620853</desc>
+          <desc class="x_label">2011</desc>
+        </g>
+        <g class="dots">
+          <circle cx="660.5474290920739" cy="107.30829222770296" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.6125</desc>
+          <desc class="x left">660.5474290920739</desc>
+          <desc class="y left">107.30829222770296</desc>
+          <desc class="x_label">2012</desc>
+        </g>
+        <g class="dots">
+          <circle cx="665.4461789370165" cy="96.2697640314625" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.6525</desc>
+          <desc class="x left">665.4461789370165</desc>
+          <desc class="y left">96.2697640314625</desc>
+          <desc class="x_label">2013</desc>
+        </g>
+        <g class="dots">
+          <circle cx="670.3449287819592" cy="77.6422477003066" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.72</desc>
+          <desc class="x left">670.3449287819592</desc>
+          <desc class="y left">77.6422477003066</desc>
+          <desc class="x_label">2014</desc>
+        </g>
+        <g class="dots">
+          <circle cx="675.243678626902" cy="34.867950939874675" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.875</desc>
+          <desc class="x left">675.243678626902</desc>
+          <desc class="y left">34.867950939874675</desc>
+          <desc class="x_label">2015</desc>
+        </g>
+        <g class="dots">
+          <circle cx="680.1424284718446" cy="7.96153846153851" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.9725</desc>
+          <desc class="x left">680.1424284718446</desc>
+          <desc class="y left">7.96153846153851</desc>
+          <desc class="x_label">2016</desc>
+        </g>
+        <g class="dots">
+          <circle cx="685.0411783167874" cy="32.79822690307958" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.8825</desc>
+          <desc class="x left">685.0411783167874</desc>
+          <desc class="y left">32.79822690307958</desc>
+          <desc class="x_label">2017</desc>
+        </g>
+        <g class="dots">
+          <circle cx="689.93992816173" cy="56.255099320090665" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.7975</desc>
+          <desc class="x left">689.93992816173</desc>
+          <desc class="y left">56.255099320090665</desc>
+          <desc class="x_label">2018</desc>
+        </g>
+        <g class="dots">
+          <circle cx="694.8386780066728" cy="19.689974670043966" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.93</desc>
+          <desc class="x left">694.8386780066728</desc>
+          <desc class="y left">19.689974670043966</desc>
+          <desc class="x_label">2019</desc>
+        </g>
+        <g class="dots">
+          <circle cx="699.7374278516155" cy="10.721170510598597" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.9625</desc>
+          <desc class="x left">699.7374278516155</desc>
+          <desc class="y left">10.721170510598597</desc>
+          <desc class="x_label">2020</desc>
+        </g>
+        <g class="dots">
+          <circle cx="704.6361776965581" cy="52.11565124650042" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.8125</desc>
+          <desc class="x left">704.6361776965581</desc>
+          <desc class="y left">52.11565124650042</desc>
+          <desc class="x_label">2021</desc>
+        </g>
+        <g class="dots">
+          <circle cx="709.5349275415009" cy="41.07712305025996" r="2.5" class="dot reactive tooltip-trigger"/>
+          <desc class="value">0.8525</desc>
+          <desc class="x left">709.5349275415009</desc>
+          <desc class="y left">41.07712305025996</desc>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(54, 46)" class="plot text-overlay">
+      <g class="series serie-0 color-0"/>
+    </g>
+    <g transform="translate(54, 46)" class="plot tooltip-overlay">
+      <g transform="translate(0 0)" style="opacity: 0" class="tooltip">
+        <rect rx="0" ry="0" width="0" height="0" class="tooltip-box"/>
+        <g class="text"/>
+      </g>
+    </g>
+  </g>
+</svg>

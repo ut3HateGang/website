@@ -1,5 +1,7 @@
-<div class="content" [ngClass]="{error: error}" (click)="onclickNext()">
+<div class="content" [ngClass]="{error: error}">
   <p class="text"> {{details}} </p>
+  <img class="image" [src]="image" *ngIf="image!=''"/>
   <p class="text"> Sources : </p>
   <p class="text" *ngFor="let lien of sources"> <a target="_blank" [href]="lien">{{lien}}</a></p>
+  <div class="button" (click)="onclickNext()"><p class="text">Question suivante</p></div>
 </div>
