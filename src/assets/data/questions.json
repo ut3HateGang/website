@@ -1,39 +1,121 @@
 [
   {
-    "question": "Question 1",
+    "id": 0,
+    "question": "A votre avis, le réchauffement climatique est-il principalement causé par l’effet de serre ?",
+    "details": "Vrai. L'effet de serre est un mécanisme naturel où certains gaz dans l'atmosphère capturent la chaleur du soleil, maintenant une température adéquate pour la vie sur Terre. Des perturbations dans cet équilibre, résultant de divers facteurs, peuvent influencer le climat de la planète. Un de ses facteurs aggravant est l’activité humaine grandissante qui à fortement augmenté ces derniers siècles, en effet nos activités émettent des gaz à effets de serre comme du Co2 ou méthane ce qui augmente l’effet de serre, et donc augmente anormalement la température globale de la planète. (2)",
     "propositions": [
-      "prop 1",
-      "prop 2"
+      "Vrai",
+      "Faux"
     ],
-    "reponses": [
-      "prop1"
+    "sources": [
+      "https://climat.be/changements-climatiques/causes/effet-de-serre",
+      "https://www.ecologie.gouv.fr/impacts-du-changement-climatique-atmosphere-temperatures-et-precipitations",
+      "https://data.unep.org/climate/essential-climate-variables-ecv/global-temperature-change"
     ],
-    "details": "blabla",
-    "source": ["https://google.fr"]
-  },{
-  "question": "Question 2",
-  "propositions": [
-    "prop 1",
-    "prop 2",
-    "prop 3",
-    "prop 4"
-  ],
-  "reponses": [
-    "prop 1"
-  ],
-  "details": "blabla",
-  "source": ["https://google.fr"]
-},{
-  "question": "Question 3",
-  "propositions": [
-    "prop 1",
-    "prop 2",
-    "prop 3"
-  ],
-  "reponses": [
-    "prop 3"
-  ],
-  "details": "blabla",
-  "source": ["https://google.fr", "https://test.uwu"]
-}
+    "reponse":
+      "Vrai"
+  },
+  {
+    "id": 1,
+    "question": "On se les pèle dehors, où est ton changement climatique ?",
+    "details": "Eh oui, une augmentation de l’émission des gaz à effets de serre ne produit pas seulement une hausse des températures, mais une augmentation dans les températures extrêmes. La différence est importante car cela implique que les températures basses sont aussi plus rudes ! Les évènements climatiques sont plus fréquents, et mettent également plus de temps pour s'atténuer avant de disparaître.",
+    "propositions": [
+      "ca n’impacte pas les température froide",
+      "c’est justement un indice"
+    ],
+    "sources": [
+      "https://www.science.org/doi/10.1126/science.abi9167",
+      "https://data.unep.org/climate/essential-climate-variables-ecv/global-temperature-change"
+    ],
+    "reponse":
+      "C'est justement un indice !"
+  },
+  {
+    "id": 2,
+    "question": "Bwoah, 2°C de plus, ça ne va pas non plus tout chambouler.",
+    "details": "Faux, bien au contraire. Si d’ici 2050 on ne réussit pas à cantonner l’augmentation des températures à 1,5°C, 8% des animaux vertébrés, 16% de plantes et 18% des insectes auront disparu. La nature étant bien faite, chacune des espèces vivantes présentes est essentielle au maintien de l’équilibre des écosystèmes, et de facto au maintien de la vie sur Terre. L’exemple le plus commun et frappant concerne les insectes pollinisateurs, qui, sans eux, l’Homme devra renoncer à multiples fruits et légumes. Une augmentation de 2°C engendrera aussi une hausse inéluctable du niveau de la mer, exposant environ plus de 10 millions de personnes d’ici 2100. (1) (2)",
+    "propositions": [
+      "Vrai",
+      "Faux"
+    ],
+    "sources": [
+      "https://www.ipcc.ch/sr15/",
+      "https://www.un.org/esa/forests/news/2019/03/on-international-day-unece-fao-forestry-and-timber-section-releases-10-facts-to-fall-in-love-with-forests/index.html"
+    ],
+    "reponse":
+      "Faux"
+  },
+  {
+    "id": 3,
+    "question": "Pour absorber le CO2, il suffit de planter des arbres partout !",
+    "details": "Faux. Bien que cela soit vu comme une panacée. D'après l'ONU, bien qu'un arbre puisse absorber jusqu'à 50 kg de CO2 par an et contribuer à atténuer le changement climatique, il est crucial de noter que leur capacité ne permettra pas d'assimiler la totalité du CO2 atmosphérique. De plus, un arbre nouvellement planté ne commence à absorber du CO2 qu'après 23 ans de croissance. De plus, il est important de noter que 50% des arbres n’arrivent pas à maturité, et ça à cause de plusieurs facteurs différents.",
+    "propositions": [
+      "Vrai",
+      "Faux"
+    ],
+    "sources": [
+      "https://www.greenpeace.fr/est-ce-que-planter-des-arbres-sauvera-le-climat/"
+    ],
+    "reponse":
+      "Faux"
+  },
+  {
+    "id": 4,
+    "question": "La plupart des scientifiques sont d’accords que le réchauffement climatique est présent.",
+    "details": "Vrai. Le verdict est même quasi unanime avec 99% de scientifiques en accord avec cette proposition. Les études et statistiques sont formelles, bien que certaines statistiques aient fait grincer des dents de plus d’un scientifique. On peut affirmer qu’avec 99% de scientifiques d’accord, il n’y a pas de consensus sur la question du réchauffement climatique.",
+    "propositions": [
+      "Vrai",
+      "Faux"
+    ],
+    "sources": [
+      "https://coveringclimatenow.org/resource/10-climate-change-myths-debunked/"
+    ],
+    "reponse":
+      "Vrai"
+
+  },
+  {
+    "id": 5,
+    "question": "L’effet de serre a pour cause “d’isoler” thermiquement la planète, un peu comme le ferait une serre agricole. ",
+    "details": "Vrai. Parlons thermodynamique, plus précisément de la seconde loi de la thermodynamique. Une partie de la physique explique comment l'énergie fonctionne dans différents systèmes. Cela joue un rôle dans notre vie quotidienne en influençant notre confort, que ce soit pour rester au chaud ou éviter le froid. Cela concerne aussi l'échange d'énergie entre le soleil, la Terre et l'espace. Par exemple, le soleil chauffe la Terre, ce qui émet de la chaleur. Certains de ces rayons sont capturés par des gaz comme le CO2, qui renvoie de la chaleur vers la Terre. Cela ressemble à l'effet d'une couverture qui nous garde au chaud la nuit, même si une étude affirmait le contraire en 2009. Si la deuxième loi de la thermodynamique est vraie alors, « les couvertures ne peuvent pas vous garder au chaud la nuit » doit être fausse. Et comme vous le savez par vos propres expériences, c'est bien sûr le cas ! L’effet de serre régule la température terrestre.",
+    "propositions": [
+      "Vrai",
+      "Faux"
+    ],
+    "sources": [
+      "https://skepticalscience.com/Second-law-of-thermodynamics-greenhouse-theory.htm"
+    ],
+    "reponse":
+      "Vrai"
+
+  },
+  {
+    "id": 6,
+    "question": "Les actions individuelles n’auront aucun impact sur le réchauffement climatique.",
+    "details": "Faux. Chaque individu peut agir individuellement pour avoir un impact sur le réchauffement climatique. Cela passe notamment par le changement de certaines habitudes, parfois bien ancrées ou balayées d’un revers de la main par un laconique “Flemme.”. Ces actions quotidiennes là incluent par exemple la préférence pour la marche ou le vélo pour se rendre à un lieu proche, trier ses déchets, débrancher tout appareil électrique non utilisé, acheter local pour éviter les vols long-courrier que certains produits effectuent pour arriver dans nos assiettes par exemple.",
+    "propositions": [
+      "Vrai",
+      "Faux"
+    ],
+    "sources": [
+      "https://nievre.fr/2022/08/09/mardi-du-climat-les-deux-premieres-idees-recues-concernant-le-changement-climatique/",
+      "https://www.statistiques.developpement-durable.gouv.fr/lempreinte-carbone-de-la-france-de-1995-2022"
+    ],
+    "reponse":
+      "Faux"
+  },
+  {
+    "id": 7,
+    "question": "Quel gaz est responsable de l’effet de serre, le CO2 ou la vapeur d’eau ?",
+    "details": "La vapeur d'eau est le principal gaz à effet de serre dans l'atmosphère. Elle absorbe les rayonnements infrarouges émis par la Terre, contribuant ainsi à retenir la chaleur et à maintenir une température propice à la vie sur Terre. Cependant, la quantité de vapeur d'eau dans l'atmosphère est influencée par des facteurs naturels tels que la température et la pression, contrairement au CO2 émis par les activités humaines. Bien que la vapeur d'eau amplifie le réchauffement climatique, elle n'est pas considérée comme le principal responsable du dérèglement climatique. Les émissions anthropiques de gaz à effet de serre comme le CO2 sont la principale cause du problème. L'épuisement des ressources en eau résultant de l'évaporation anthropique peut entraîner des conséquences locales telles que des sécheresses et des famines.",
+    "propositions": [
+      "L'effet de serre",
+      "La vapeur d'eau"
+    ],
+    "sources": [
+      "https://youmatter.world/fr/vapeur-eau-participe-aggrave-changement-climatique/"
+    ],
+    "reponse":
+      "La vapeur d'eau"
+  }
 ]

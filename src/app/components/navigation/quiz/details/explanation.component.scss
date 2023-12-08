@@ -1,0 +1,23 @@
+@import '../../../../styles/uhg-style';
+
+:host {
+  @include flex(row);
+}
+
+.content {
+  margin: 16px;
+  background-color: var(--md-sys-color-primary-container);
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: var(--md-sys-elevation-1);
+
+  &.error {
+    background-color: var(--md-sys-color-error-container);
+  }
+
+  .text {
+    @extend .title-medium;
+    color: var(--md-sys-color-on-surface);
+  }
+
+}

@@ -1,0 +1,15 @@
+@import '../../../../styles/uhg-style';
+
+:host {
+  @include flex(row);
+  margin: auto;
+}
+
+.text {
+  @extend .display-small;
+  margin: 16px;
+  padding: 10px 25px;
+  border-radius: 20px;
+  background-color: var(--md-sys-color-surface-container-high);
+  color: var(--md-sys-color-on-surface);
+}

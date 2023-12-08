@@ -1,10 +1,10 @@
 export class Question {
-  // question
+  // intitule
   question: string = "";
   //propositions
   propositions: string[] = [];
   // reponses
-  reponses: string[] = [];
+  reponse: string = "";
   // details
   details: string = "";
   // sources

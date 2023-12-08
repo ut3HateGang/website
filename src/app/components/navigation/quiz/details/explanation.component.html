@@ -1,1 +1,5 @@
-<p class="text"> {{details}} </p>
+<div class="content" [ngClass]="{error: error}" (click)="onclickNext()">
+  <p class="text"> {{details}} </p>
+  <p class="text"> Sources : </p>
+  <p class="text" *ngFor="let lien of sources"> <a target="_blank" [href]="lien">{{lien}}</a></p>
+</div>

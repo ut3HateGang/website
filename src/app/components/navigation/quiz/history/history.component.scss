@@ -1,0 +1,6 @@
+@import '../../../../styles/uhg-style';
+
+:host {
+  @include flex(column);
+  background-color: red;
+}
