@@ -1,3 +1,24 @@
+
+## Commandes d'installation et de lancement de l'application principale
+```
+npm i -g @angular/cli
+```
+
+```
+ng g environments
+```
+
+```
+npm i
+```
+
+```
+npm run dev
+```
+
+
+-----------------
+
 # Website
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
