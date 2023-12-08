@@ -12,7 +12,7 @@ import {ServicesModule} from '../core/services/services.module';
 import { HomeComponent } from './navigation/home/home.component';
 import { NotFoundComponent } from './navigation/not-found/not-found.component';
 import { QuizComponent } from './navigation/quiz/quiz.component';
-import { QuestionComponent } from './navigation/quiz/question/question.component';
+import { IntituleComponent } from './navigation/quiz/question/intitule.component';
 import { PropositionsComponent } from './navigation/quiz/propositions/propositions.component';
 import { HistoryComponent } from './navigation/quiz/history/history.component';
 import { ExplanationComponent } from './navigation/quiz/details/explanation.component';
@@ -24,7 +24,7 @@ import { ExplanationComponent } from './navigation/quiz/details/explanation.comp
     HomeComponent,
     NotFoundComponent,
     QuizComponent,
-    QuestionComponent,
+    IntituleComponent,
     PropositionsComponent,
     HistoryComponent,
     ExplanationComponent

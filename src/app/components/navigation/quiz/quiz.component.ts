@@ -9,8 +9,18 @@ import {Icon} from "../../../core/objects/enums/icon.enum";
   templateUrl: './quiz.component.html',
   styleUrls: ['./quiz.component.scss']
 })
-export class QuizComponent {
+export class QuizComponent implements OnInit {
   protected _currentQuestion: number = 0;
   protected _listQuestion: Question[] = [];
+  protected _quizstate: Quizstatetype = Quizstatetype.QUESTION;
 
+
+  constructor(private __questionService: QuestionService) {
+  }
+
+  ngOnInit() {
+    this._listQuestion = this.__questionService.getTenQuestions()
+  }
+
+  protected readonly Quizstatetype = Quizstatetype;
 }
