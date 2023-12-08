@@ -38,6 +38,10 @@ export class CurrentPageService {
     switch (this._previousPage) {
       case Page.HOME:
         return '/';
+      case Page.SNAKE:
+        return '/';
+      case Page.ZERGRUSH:
+        return '/';
       case Page.NOT_FOUND:
         return '/';
     }
@@ -47,6 +51,12 @@ export class CurrentPageService {
     switch (this._currentPage) {
       case Page.HOME:
         this._titleService.setTitle('Accueil');
+        break;
+      case Page.SNAKE:
+        this._titleService.setTitle('Snake');
+        break;
+      case Page.ZERGRUSH:
+        this._titleService.setTitle('Zerg Rush');
         break;
       case Page.NOT_FOUND:
         this._titleService.setTitle('Erreur 404');
