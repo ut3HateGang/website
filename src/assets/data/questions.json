@@ -1,11 +1,11 @@
 [
   {
     "id": 0,
-    "question": "A votre avis, le réchauffement climatique est-il principalement causé par l’effet de serre ?",
-    "details": "Vrai. L'effet de serre est un mécanisme naturel où certains gaz dans l'atmosphère capturent la chaleur du soleil, maintenant une température adéquate pour la vie sur Terre. Des perturbations dans cet équilibre, résultant de divers facteurs, peuvent influencer le climat de la planète. Un de ses facteurs aggravant est l’activité humaine grandissante qui à fortement augmenté ces derniers siècles, en effet nos activités émettent des gaz à effets de serre comme du Co2 ou méthane ce qui augmente l’effet de serre, et donc augmente anormalement la température globale de la planète. (2)",
+    "question": "À votre avis, le réchauffement climatique est-il principalement causé par l’effet de serre ?",
+    "details": "Oui ! L'effet de serre est un mécanisme naturel où certains gaz dans l'atmosphère capturent la chaleur du soleil, maintenant une température adéquate pour la vie sur Terre. Des perturbations dans cet équilibre, résultant de divers facteurs, peuvent influencer le climat de la planète. Un de ses facteurs aggravant est l’activité humaine grandissante qui à fortement augmenté ces derniers siècles, en effet nos activités émettent des gaz à effets de serre comme du Co2 ou méthane ce qui augmente l’effet de serre, et donc augmente anormalement la température globale de la planète. (2)",
     "propositions": [
-      "Vrai",
-      "Faux"
+      "Oui",
+      "Non"
     ],
     "sources": [
       "https://climat.be/changements-climatiques/causes/effet-de-serre",
@@ -13,15 +13,15 @@
       "https://data.unep.org/climate/essential-climate-variables-ecv/global-temperature-change"
     ],
     "reponse":
-      "Vrai"
+      "Oui"
   },
   {
     "id": 1,
     "question": "On se les pèle dehors, où est ton changement climatique ?",
     "details": "Eh oui, une augmentation de l’émission des gaz à effets de serre ne produit pas seulement une hausse des températures, mais une augmentation dans les températures extrêmes. La différence est importante car cela implique que les températures basses sont aussi plus rudes ! Les évènements climatiques sont plus fréquents, et mettent également plus de temps pour s'atténuer avant de disparaître.",
     "propositions": [
-      "ca n’impacte pas les température froide",
-      "c’est justement un indice"
+      "Ca n’impacte pas les températures froides.",
+      "C'est justement un indice !"
     ],
     "sources": [
       "https://www.science.org/doi/10.1126/science.abi9167",
