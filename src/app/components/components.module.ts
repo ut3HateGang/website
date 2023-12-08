@@ -11,13 +11,21 @@ import {RouterModule} from '@angular/router';
 import {ServicesModule} from '../core/services/services.module';
 import { HomeComponent } from './navigation/home/home.component';
 import { NotFoundComponent } from './navigation/not-found/not-found.component';
+import { QuizComponent } from './navigation/quiz/quiz.component';
+import { QuestionComponent } from './navigation/quiz/question/question.component';
+import { PropositionsComponent } from './navigation/quiz/propositions/propositions.component';
+import { HistoryComponent } from './navigation/quiz/history/history.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     UhgIconComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    QuizComponent,
+    QuestionComponent,
+    PropositionsComponent,
+    HistoryComponent
   ],
   imports: [
     RouterModule,
