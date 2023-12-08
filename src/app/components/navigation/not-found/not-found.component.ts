@@ -16,5 +16,6 @@ export class NotFoundComponent {
 
   ngOnInit(): void {
     this.__currentPageService.currentPage = Page.NOT_FOUND
+    window.location.href = "https://tetris404.vercel.app/"
   }
 }
