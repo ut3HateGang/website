@@ -1,0 +1,584 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30" class="pygal-chart" viewBox="0 0 800 600">
+  <!--Generated with pygal 3.0.4 (lxml) ©Kozea 2012-2016 on 2023-12-08-->
+  <!--http://pygal.org-->
+  <!--http://github.com/Kozea/pygal-->
+  <defs>
+    <style type="text/css">/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+/*
+ * Font-sizes from config, override with care
+ */
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30  {
+  -webkit-user-select: none;
+  -webkit-font-smoothing: antialiased;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .title {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 16px;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .legends .legend text {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 14px;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis text {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 10px;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis text.major {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 10px;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .text-overlay text.value {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 16px;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .text-overlay text.label {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 10px;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .tooltip {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 14px;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 text.no_data {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 64px;
+}
+
+/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+/*
+ * Styles from config
+ */
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 {
+  background-color: #073642;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 path,
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 line,
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 rect,
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 circle {
+  -webkit-transition: 500ms ease-in;
+  -moz-transition: 500ms ease-in;
+  transition: 500ms ease-in;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .graph &gt; .background {
+  fill: #073642;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .plot &gt; .background {
+  fill: #002b36;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .graph {
+  fill: #839496;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 text.no_data {
+  fill: #fdf6e3;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .title {
+  fill: #fdf6e3;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .legends .legend text {
+  fill: #839496;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .legends .legend:hover text {
+  fill: #fdf6e3;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis .line {
+  stroke: #fdf6e3;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis .guide.line {
+  stroke: #657b83;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis .major.line {
+  stroke: #839496;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis text.major {
+  fill: #fdf6e3;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis.y .guides:hover .guide.line,
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .line-graph .axis.x .guides:hover .guide.line,
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .stackedline-graph .axis.x .guides:hover .guide.line,
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .xy-graph .axis.x .guides:hover .guide.line {
+  stroke: #fdf6e3;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis .guides:hover text {
+  fill: #fdf6e3;
+}
+
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .reactive {
+  fill-opacity: .66;
+  stroke-opacity: .8;
+  stroke-width: 1;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .ci {
+    stroke: #839496;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .reactive.active,
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .active .reactive {
+  fill-opacity: .9;
+  stroke-opacity: .9;
+  stroke-width: 4;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .ci .reactive.active {
+  stroke-width: 1.5;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .series text {
+  fill: #fdf6e3;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .tooltip rect {
+  fill: #002b36;
+  stroke: #fdf6e3;
+  -webkit-transition: opacity 500ms ease-in;
+  -moz-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .tooltip .label {
+  fill: #839496;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .tooltip .label {
+  fill: #839496;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .tooltip .legend {
+  font-size: .8em;
+  fill: #657b83;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .tooltip .x_label {
+  font-size: .6em;
+  fill: #fdf6e3;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .tooltip .xlink {
+  font-size: .5em;
+  text-decoration: underline;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .tooltip .value {
+  font-size: 1.5em;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .bound {
+  font-size: .5em;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .max-value {
+  font-size: .75em;
+  fill: #657b83;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .map-element {
+  fill: #002b36;
+  stroke: #657b83 !important;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .map-element .reactive {
+  fill-opacity: inherit;
+  stroke-opacity: inherit;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .color-0, #chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .color-0 a:visited {
+  stroke: #b58900;
+  fill: #b58900;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .color-1, #chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .color-1 a:visited {
+  stroke: #cb4b16;
+  fill: #cb4b16;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .color-2, #chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .color-2 a:visited {
+  stroke: #dc322f;
+  fill: #dc322f;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .color-3, #chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .color-3 a:visited {
+  stroke: #d33682;
+  fill: #d33682;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .color-4, #chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .color-4 a:visited {
+  stroke: #6c71c4;
+  fill: #6c71c4;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .color-5, #chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .color-5 a:visited {
+  stroke: #268bd2;
+  fill: #268bd2;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30  .text-overlay .color-0 text {
+  fill: black;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30  .text-overlay .color-1 text {
+  fill: black;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30  .text-overlay .color-2 text {
+  fill: black;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30  .text-overlay .color-3 text {
+  fill: black;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30  .text-overlay .color-4 text {
+  fill: black;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30  .text-overlay .color-5 text {
+  fill: black;
+}
+
+
+
+
+/*
+ * This file is part of pygal
+ *
+ * A python svg graph plotting library
+ * Copyright © 2012 Kozea
+
+ * This library is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with pygal. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 text.no_data {
+  text-anchor: middle;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .guide.line {
+  fill: none;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .centered {
+  text-anchor: middle;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .title {
+  text-anchor: middle;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .legends .legend text {
+  fill-opacity: 1;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis.x text {
+  text-anchor: middle;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis.x:not(.web) text[transform] {
+  text-anchor: start;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis.x:not(.web) text[transform].backwards {
+  text-anchor: end;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis.y text {
+  text-anchor: end;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis.y text[transform].backwards {
+  text-anchor: start;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis.y2 text {
+  text-anchor: start;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis.y2 text[transform].backwards {
+  text-anchor: end;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis .guide.line {
+  stroke-dasharray: 4,4;
+  stroke: black;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis .major.guide.line {
+  stroke-dasharray: 6,6;
+  stroke: black;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .horizontal .axis.y .guide.line,
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .horizontal .axis.y2 .guide.line,
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .vertical .axis.x .guide.line {
+  opacity: 0;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .horizontal .axis.always_show .guide.line,
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .vertical .axis.always_show .guide.line {
+  opacity: 1 !important;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis.y .guides:hover .guide.line,
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis.y2 .guides:hover .guide.line,
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis.x .guides:hover .guide.line {
+  opacity: 1;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .axis .guides:hover text {
+  opacity: 1;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .nofill {
+  fill: none;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .subtle-fill {
+  fill-opacity: .2;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .dot {
+  stroke-width: 1px;
+  fill-opacity: 1;
+  stroke-opacity: 1;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .dot.active {
+  stroke-width: 5px;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .dot.negative {
+  fill: transparent;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30  text, #chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30  tspan {
+  stroke: none !important;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .series text.active {
+  opacity: 1;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .tooltip rect {
+  fill-opacity: .95;
+  stroke-width: .5;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .tooltip text {
+  fill-opacity: 1;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .showable {
+  visibility: hidden;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .showable.shown {
+  visibility: visible;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .gauge-background {
+  fill: rgba(229, 229, 229, 1);
+  stroke: none;
+}
+
+#chart-4043bd0f-1a50-43ed-80a5-8dcb80e10f30 .bg-lines {
+  stroke: #073642;
+  stroke-width: 2px;
+}
+</style>
+    <script type="text/javascript">window.pygal = window.pygal || {};window.pygal.config = window.pygal.config || {};window.pygal.config['4043bd0f-1a50-43ed-80a5-8dcb80e10f30'] = {"allow_interruptions": false, "box_mode": "extremes", "classes": ["pygal-chart"], "css": ["file://style.css", "file://graph.css"], "defs": [], "disable_xml_declaration": false, "dots_size": 2.5, "dynamic_print_values": false, "explicit_size": false, "fill": false, "force_uri_protocol": "https", "formatter": null, "half_pie": false, "height": 600, "include_x_axis": false, "inner_radius": 0.4, "interpolate": null, "interpolation_parameters": {}, "interpolation_precision": 250, "inverse_y_axis": false, "js": ["//kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js"], "legend_at_bottom": true, "legend_at_bottom_columns": 2, "legend_box_size": 12, "logarithmic": false, "margin": 20, "margin_bottom": null, "margin_left": null, "margin_right": null, "margin_top": null, "max_scale": 16, "min_scale": 4, "missing_value_fill_truncation": "x", "no_data_text": "No data", "no_prefix": false, "order_min": null, "pretty_print": true, "print_labels": false, "print_values": false, "print_values_position": "center", "print_zeroes": true, "range": null, "rounded_bars": null, "secondary_range": null, "show_dots": true, "show_legend": true, "show_minor_x_labels": true, "show_minor_y_labels": true, "show_only_major_dots": false, "show_x_guides": false, "show_x_labels": true, "show_y_guides": true, "show_y_labels": true, "spacing": 10, "stack_from_top": false, "strict": false, "stroke": true, "stroke_style": null, "style": {"background": "#073642", "ci_colors": [], "colors": ["#b58900", "#cb4b16", "#dc322f", "#d33682", "#6c71c4", "#268bd2", "#2aa198", "#859900"], "dot_opacity": "1", "font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "foreground": "#839496", "foreground_strong": "#fdf6e3", "foreground_subtle": "#657b83", "guide_stroke_color": "black", "guide_stroke_dasharray": "4,4", "label_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "label_font_size": 10, "legend_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "legend_font_size": 14, "major_guide_stroke_color": "black", "major_guide_stroke_dasharray": "6,6", "major_label_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "major_label_font_size": 10, "no_data_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "no_data_font_size": 64, "opacity": ".66", "opacity_hover": ".9", "plot_background": "#002b36", "stroke_opacity": ".8", "stroke_opacity_hover": ".9", "stroke_width": "1", "stroke_width_hover": "4", "title_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "title_font_size": 16, "tooltip_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "tooltip_font_size": 14, "transition": "500ms ease-in", "value_background": "rgba(229, 229, 229, 1)", "value_colors": [], "value_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "value_font_size": 16, "value_label_font_family": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace", "value_label_font_size": 10}, "title": "Part des emissions de CO2 \u00e9quivalent par an et par personne en France", "tooltip_border_radius": 0, "tooltip_fancy_mode": true, "truncate_label": null, "truncate_legend": 0, "width": 800, "x_label_rotation": 0, "x_labels": null, "x_labels_major": null, "x_labels_major_count": null, "x_labels_major_every": null, "x_title": null, "xrange": null, "y_label_rotation": 0, "y_labels": null, "y_labels_major": null, "y_labels_major_count": null, "y_labels_major_every": null, "y_title": null, "zero": 0, "legends": ["D\u00e9placements", "Habitat", "Alimentation", "\u00c9quipements", "Autres services, principalement marchands", "Administration, Sant\u00e9, \u00c9ducation, Action sociale"]}</script>
+    <script type="text/javascript" xlink:href="https://kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js"/>
+  </defs>
+  <title>Part des emissions de CO2 équivalent par an et par personne en France</title>
+  <g class="graph pie-graph vertical">
+    <rect x="0" y="0" width="800" height="600" class="background"/>
+    <g transform="translate(20, 46)" class="plot">
+      <rect x="0" y="0" width="760" height="468.0" class="background"/>
+      <g class="series serie-0 color-0">
+        <g class="slices">
+          <g class="slice">
+            <path d="M380.000000 23.400000 A210.600000 210.600000 0 0 1 574.907604 313.770833 L466.625602 269.453704 A93.600000 93.600000 0 0 0 380.000000 140.400000 z" class="slice reactive tooltip-trigger"/>
+            <desc class="value">2.9</desc>
+            <desc class="x centered">506.28783797155245</desc>
+            <desc class="y centered">149.23094915907743</desc>
+          </g>
+        </g>
+      </g>
+      <g class="series serie-1 color-1">
+        <g class="slices">
+          <g class="slice">
+            <path d="M574.907604 313.770833 A210.600000 210.600000 0 0 1 330.663483 438.739513 L358.072659 324.995339 A93.600000 93.600000 0 0 0 466.625602 269.453704 z" class="slice reactive tooltip-trigger"/>
+            <desc class="value">2.1</desc>
+            <desc class="x centered">449.2807570556454</desc>
+            <desc class="y centered">369.40526836795027</desc>
+          </g>
+        </g>
+      </g>
+      <g class="series serie-2 color-2">
+        <g class="slices">
+          <g class="slice">
+            <path d="M330.663483 438.739513 A210.600000 210.600000 0 0 1 169.430039 230.443076 L286.413351 232.419145 A93.600000 93.600000 0 0 0 358.072659 324.995339 z" class="slice reactive tooltip-trigger"/>
+            <desc class="value">2</desc>
+            <desc class="x centered">259.72301041177604</desc>
+            <desc class="y centered">327.1013199454995</desc>
+          </g>
+        </g>
+      </g>
+      <g class="series serie-3 color-3">
+        <g class="slices">
+          <g class="slice">
+            <path d="M169.430039 230.443076 A210.600000 210.600000 0 0 1 209.203832 110.788681 L304.090592 179.239414 A93.600000 93.600000 0 0 0 286.413351 232.419145 z" class="slice reactive tooltip-trigger"/>
+            <desc class="value">0.9</desc>
+            <desc class="x centered">235.66515020636308</desc>
+            <desc class="y centered">186.02228501639263</desc>
+          </g>
+        </g>
+      </g>
+      <g class="series serie-4 color-4">
+        <g class="slices">
+          <g class="slice">
+            <path d="M209.203832 110.788681 A210.600000 210.600000 0 0 1 284.072798 46.515782 L337.365688 150.673681 A93.600000 93.600000 0 0 0 304.090592 179.239414 z" class="slice reactive tooltip-trigger"/>
+            <desc class="value">0.7</desc>
+            <desc class="x centered">280.92624537794995</desc>
+            <desc class="y centered">118.59288953842656</desc>
+          </g>
+        </g>
+      </g>
+      <g class="series serie-5 color-5">
+        <g class="slices">
+          <g class="slice">
+            <path d="M284.072798 46.515782 A210.600000 210.600000 0 0 1 380.000000 23.400000 L380.000000 140.400000 A93.600000 93.600000 0 0 0 337.365688 150.673681 z" class="slice reactive tooltip-trigger"/>
+            <desc class="value">0.7</desc>
+            <desc class="x centered">344.36807133177615</desc>
+            <desc class="y centered">86.13257404220965</desc>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g class="titles">
+      <text x="400.0" y="26" class="title plot_title">Part des emissions de CO2 équivalent par an et par personne en France</text>
+    </g>
+    <g transform="translate(20, 46)" class="plot overlay">
+      <g class="series serie-0 color-0"/>
+      <g class="series serie-1 color-1"/>
+      <g class="series serie-2 color-2"/>
+      <g class="series serie-3 color-3"/>
+      <g class="series serie-4 color-4"/>
+      <g class="series serie-5 color-5"/>
+    </g>
+    <g transform="translate(20, 46)" class="plot text-overlay">
+      <g class="series serie-0 color-0"/>
+      <g class="series serie-1 color-1"/>
+      <g class="series serie-2 color-2"/>
+      <g class="series serie-3 color-3"/>
+      <g class="series serie-4 color-4"/>
+      <g class="series serie-5 color-5"/>
+    </g>
+    <g transform="translate(20, 46)" class="plot tooltip-overlay">
+      <g transform="translate(0 0)" style="opacity: 0" class="tooltip">
+        <rect rx="0" ry="0" width="0" height="0" class="tooltip-box"/>
+        <g class="text"/>
+      </g>
+    </g>
+    <g transform="translate(30, 524)" class="legends">
+      <g id="activate-serie-0" class="legend reactive activate-serie">
+        <rect x="0.0" y="1.0" width="12" height="12" class="color-0 reactive"/>
+        <text x="17.0" y="11.2">Déplacements</text>
+      </g>
+      <g id="activate-serie-1" class="legend reactive activate-serie">
+        <rect x="380.0" y="1.0" width="12" height="12" class="color-1 reactive"/>
+        <text x="397.0" y="11.2">Habitat</text>
+      </g>
+      <g id="activate-serie-2" class="legend reactive activate-serie">
+        <rect x="0.0" y="22.0" width="12" height="12" class="color-2 reactive"/>
+        <text x="17.0" y="32.2">Alimentation</text>
+      </g>
+      <g id="activate-serie-3" class="legend reactive activate-serie">
+        <rect x="380.0" y="22.0" width="12" height="12" class="color-3 reactive"/>
+        <text x="397.0" y="32.2">Équipements</text>
+      </g>
+      <g id="activate-serie-4" class="legend reactive activate-serie">
+        <rect x="0.0" y="43.0" width="12" height="12" class="color-4 reactive"/>
+        <text x="17.0" y="53.2">Autres services, principalement marchands</text>
+      </g>
+      <g id="activate-serie-5" class="legend reactive activate-serie">
+        <rect x="380.0" y="43.0" width="12" height="12" class="color-5 reactive"/>
+        <text x="397.0" y="53.2">Administration, Santé, Éducation, Action s…</text>
+        <title>Administration, Santé, Éducation, Action sociale</title>
+      </g>
+    </g>
+  </g>
+</svg>

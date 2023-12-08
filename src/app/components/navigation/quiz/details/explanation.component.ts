@@ -7,6 +7,7 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 })
 export class ExplanationComponent {
   @Input() details!: string;
+  @Input() image!: string;
   @Input() sources!: string[];
   @Input() error!:boolean;
   @Output() next: EventEmitter<any> = new EventEmitter<any>()

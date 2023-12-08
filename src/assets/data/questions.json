@@ -7,6 +7,7 @@
       "Oui",
       "Non"
     ],
+    "image": "assets/data/temp_evol.svg",
     "sources": [
       "https://climat.be/changements-climatiques/causes/effet-de-serre",
       "https://www.ecologie.gouv.fr/impacts-du-changement-climatique-atmosphere-temperatures-et-precipitations",
@@ -82,8 +83,10 @@
       "Vrai",
       "Faux"
     ],
+    "image": "assets/data/part_emission_france.svg",
     "sources": [
-      "https://skepticalscience.com/Second-law-of-thermodynamics-greenhouse-theory.htm"
+      "https://skepticalscience.com/Second-law-of-thermodynamics-greenhouse-theory.htm",
+      "https://www.statistiques.developpement-durable.gouv.fr/lempreinte-carbone-de-la-france-de-1995-2022"
     ],
     "reponse":
       "Vrai"

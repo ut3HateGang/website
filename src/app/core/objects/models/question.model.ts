@@ -9,4 +9,6 @@ export class Question {
   details: string = "";
   // sources
   sources: string[] = [];
+  // image
+  image: string = "";
 }
