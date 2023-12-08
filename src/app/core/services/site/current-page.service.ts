@@ -40,6 +40,10 @@ export class CurrentPageService {
         return '/';
       case Page.NOT_FOUND:
         return '/';
+      case Page.QUIZ:
+        return '/quiz';
+      case Page.COMPRESS_IMAGE:
+        return '/compress-image';
     }
   }
 
@@ -50,6 +54,12 @@ export class CurrentPageService {
         break;
       case Page.NOT_FOUND:
         this._titleService.setTitle('Erreur 404');
+        break;
+      case Page.QUIZ:
+        this._titleService.setTitle('Quiz');
+        break;
+      case Page.COMPRESS_IMAGE:
+        this._titleService.setTitle('Compress image');
         break;
     }
   }

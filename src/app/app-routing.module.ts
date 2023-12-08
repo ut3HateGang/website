@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {RedirectionGuard} from './core/objects/guards/redirection.guard';
+import {RedirectionGuard} from './core/guards/redirection.guard';
 import {
   NotFoundComponent
 } from './components/navigation/not-found/not-found.component';
