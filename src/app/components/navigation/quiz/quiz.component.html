@@ -1,0 +1,15 @@
+<div class="question" *ngIf="_listQuestion.length >= _currentQuestion">
+  <intitule [intitule]="_listQuestion[_currentQuestion].question"></intitule>
+  <div class="content">
+    <propositions [propositions]="_listQuestion[_currentQuestion].propositions" (choose)="choseProposition($event)"
+                  *ngIf="_quizstate==Quizstatetype.QUESTION"></propositions>
+    <explanation [details]="_listQuestion[_currentQuestion].details" [sources]="_listQuestion[_currentQuestion].sources"
+                 [error]="_hasFalse" (next)="next()"
+                 *ngIf="_quizstate==Quizstatetype.ANSWER"></explanation>
+  </div>
+</div>
+<div class="question" *ngIf="_listQuestion.length < _currentQuestion">
+  <intitule [intitule]="'Vous avez fait toutes les questions, bien joué !'"></intitule>
+
+</div>
+<!-- <history></history> -->

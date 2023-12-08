@@ -1,4 +1,4 @@
-<div [class]="'header vertical'">
+<div *ngIf="!_windowService.isPhone()" [class]="'header vertical'">
     <div *ngFor="let item of _headerItems" [ngClass]="{selected : item.value == _currentPage}" [routerLink]="item.link"
          class="item">
         <div class="container">
