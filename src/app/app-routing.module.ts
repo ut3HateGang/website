@@ -5,9 +5,11 @@ import {
   NotFoundComponent
 } from './components/navigation/not-found/not-found.component';
 import {HomeComponent} from './components/navigation/home/home.component';
+import {QuizComponent} from "./components/navigation/quiz/quiz.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
+  {path: 'quiz', component: QuizComponent},
   {path: 'notFound', component: NotFoundComponent},
   {
   path: '**',
