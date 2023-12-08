@@ -2,7 +2,7 @@ import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
 import {
   matClose,
-  matHome, matMenu,
+  matHome, matImage, matMenu, matQuiz,
 } from '@ng-icons/material-icons/baseline';
 import {NgIconComponent, provideIcons} from '@ng-icons/core';
 import {HeaderComponent} from './overall/header/header.component';
@@ -28,7 +28,9 @@ import { NotFoundComponent } from './navigation/not-found/not-found.component';
     provideIcons({
       matHome,
       matClose,
-      matMenu
+      matMenu,
+      matImage,
+      matQuiz
     }),
   ],
   exports: [

@@ -24,13 +24,15 @@ export class HeaderComponent implements OnInit, OnChanges, OnDestroy {
 
   protected _headerItems: HeaderItem[] = [
     new HeaderItem('/', undefined, 'Accueil', Page.HOME, Icon.HOME),
+    new HeaderItem('/quiz', undefined, 'Quiz', Page.QUIZ, Icon.QUIZ),
+    new HeaderItem('/compress-image', undefined, 'Compression', Page.COMPRESS_IMAGE, Icon.IMAGE),
   ];
 
   protected _currentPage!: Page;
   protected readonly Icon = Icon;
 
   constructor(
-      private _currentPageService: CurrentPageService,
+      private __currentPageService: CurrentPageService,
       protected _windowService: WindowService) {
   }
 
@@ -41,8 +43,8 @@ export class HeaderComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   ngOnInit(): void {
-    this._currentPage = this._currentPageService.currentPage;
-    this._currentPageService.currentPage$.subscribe(page => {
+    this._currentPage = this.__currentPageService.currentPage;
+    this.__currentPageService.currentPage$.subscribe(page => {
         this._currentPage = page;
     });
     this._windowService.innerWidth$.subscribe(

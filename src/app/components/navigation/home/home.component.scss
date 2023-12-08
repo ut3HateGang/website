@@ -1,0 +1,8 @@
+@import "../../../styles/uhg-style";
+
+:host {
+  @include flex-fill(column);
+  height: 100%;
+  background-image: url("../../../../assets/pictures/homepage.jpg");
+  background-size: cover;
+}
